@@ -7,14 +7,18 @@
 
 
 //amb node:
-const d3 = require("d3");
+//const d3 = require("d3");
 
 var paragraphs = document.getElementsByTagName("p");
-
 for (var i = 0; i < paragraphs.length; i++) {
   var paragraph = paragraphs.item(i);
   paragraph.style.setProperty("color", "blue", null);
 }
+
+d3.selectAll("p").style("color", "yellow");
+
+
+
 
 var doc = document.getElementById('region');
 doc.innerHTML = "hey ho lets go!";
