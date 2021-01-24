@@ -4,7 +4,11 @@
  * and open the template in the editor.
  */
 
-
+/*
+ * asyncronous functions are called immediately, but their callback functions
+ * are only called once the computing stack is free again: i.e. when all
+ * the other execution has finished.
+ */
 
 //amb node:
 //const d3 = require("d3");
@@ -37,33 +41,77 @@ var aux3 = document.getElementById("aux3");
 
 var doc = document.getElementById('region');
 doc.innerHTML = "hey ho lets go!";
-var dat = [];
+
+var dat = ["senyor"];
 
 
-d3.csv("data/cities.csv").then(function(data) {
-  console.log(data[1]);
+    var svg = d3.select("svg"),
+        margin = 200,
+        width = svg.attr("width") - margin,
+        height = svg.attr("height") - margin;
+
+
+    var xScale = d3.scaleBand().range ([0, width]).padding(0.4),
+        yScale = d3.scaleLinear().range ([height, 0]);
+
+    var g = svg.append("g")
+               .attr("transform", "translate(" + 100 + "," + 100 + ")");
+
+
+d3.csv("data/prova2.csv").then(function(data) {
+
+        xScale.domain(data.map(function(d) { return d.year; }));
+        yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
+
+        g.append("g")
+         .attr("transform", "translate(0," + height + ")")
+         .call(d3.axisBottom(xScale));
+
+        g.append("g")
+         .call(d3.axisLeft(yScale).tickFormat(function(d){
+             return "$" + d;
+         }).ticks(10))
+         .append("text")
+         .attr("y", 6)
+         .attr("dy", "0.71em")
+         .attr("text-anchor", "end")
+         .text("value");
+});
+
+
+
+
+
+
+
+
+
+
+function dibu(para="aula") {
+    console.log(para);   
+}
+
+var datil = d3.csv("data/cities.csv").then(function(data) {
+  console.log("initial ");
+  console.log(data);
   dat = data;
   aux2.innerHTML = dat.length;
-});
-uax
-
-var dati = d3.csv("data/cities.csv", function(d) {
-  return {
-    city : d.city,
-    state : d.state,
-    population : +d.population,
-    land_area : +d["land area"]
-  };
-}).then(function(data) {
-  console.log(data[1]);
+  dibu(data[0]);
+  return data;
 });
 
-d3.json("data/clients1.json", function (d) { 
-            console.log(d); 
-            console.log("hi");
-        }); 
 
-aux2.innerHTML += dati.length;
+console.log("outside ");
+console.log(datil);
+
+//d3.json("data/clients1.json", function (d) { 
+//            console.log(d); 
+//            console.log("hi");
+//        }); 
+
+aux3.innerHTML += " " + dat.length;
+
+
 
 //var aux1 = document.getElementById("aux1");
 //aux1.innerHTML ="Nao";
