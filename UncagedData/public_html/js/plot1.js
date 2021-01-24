@@ -44,7 +44,7 @@ doc.innerHTML = "hey ho lets go!";
 
 var dat = ["senyor"];
 
-
+//creant axis i parametres pel gràfic
     var svg = d3.select("svg"),
         margin = 200,
         width = svg.attr("width") - margin,
@@ -59,7 +59,7 @@ var dat = ["senyor"];
 
 
 d3.csv("data/prova2.csv").then(function(data) {
-
+//fent de fet el gràfic
         xScale.domain(data.map(function(d) { return d.year; }));
         yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
 
@@ -76,6 +76,17 @@ d3.csv("data/prova2.csv").then(function(data) {
          .attr("dy", "0.71em")
          .attr("text-anchor", "end")
          .text("value");
+ 
+ g.selectAll(".bar")
+         .data(data)
+         .enter().append("rect")
+         .attr("class", "bar")
+         .attr("x", function(d) { return xScale(d.year); })
+         .attr("y", function(d) { return yScale(d.value); })
+         .attr("width", xScale.bandwidth())
+         .attr("height", function(d) { return height - yScale(d.value); });
+
+         g.selectAll(".bar").style("fill", "purple");
 });
 
 
