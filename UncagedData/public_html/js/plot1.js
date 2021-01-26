@@ -92,7 +92,7 @@ d3.csv("data/prova2.csv").then(function(data) {
          .attr("width", xScale.bandwidth())
          .attr("height", function(d) { return height - yScale(d.value); });
 
-         g.selectAll(".bar").style("fill", "purple");
+         g.selectAll(".bar").style("fill", "green");
 });
 
 
