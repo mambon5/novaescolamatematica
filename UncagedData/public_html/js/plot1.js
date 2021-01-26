@@ -36,6 +36,7 @@ p.enter(4).append("p")
 p.exit().remove(2);
     
 var aux1 = document.getElementById("aux1");
+aux1.innerHTML = "ROma";
 var aux2 = document.getElementById("aux2");
 var aux3 = document.getElementById("aux3");
 
@@ -44,18 +45,23 @@ doc.innerHTML = "hey ho lets go!";
 
 var dat = ["senyor"];
 
+
+
+
+
+
 //creant axis i parametres pel gràfic
-    var svg = d3.select("svg"),
-        margin = 200,
-        width = svg.attr("width") - margin,
-        height = svg.attr("height") - margin;
+var svg = d3.select("svg"),
+    margin = 200,
+    width = svg.attr("width") - margin,
+    height = svg.attr("height") - margin;
 
 
-    var xScale = d3.scaleBand().range ([0, width]).padding(0.4),
-        yScale = d3.scaleLinear().range ([height, 0]);
+var xScale = d3.scaleBand().range ([0, width]).padding(0.4),
+    yScale = d3.scaleLinear().range ([height, 0]);
 
-    var g = svg.append("g")
-               .attr("transform", "translate(" + 100 + "," + 100 + ")");
+var g = svg.append("g")
+           .attr("transform", "translate(" + 100 + "," + 100 + ")");
 
 
 d3.csv("data/prova2.csv").then(function(data) {
@@ -98,6 +104,9 @@ d3.csv("data/prova2.csv").then(function(data) {
 
 
 
+
+
+
 function dibu(para="aula") {
     console.log(para);   
 }
@@ -126,11 +135,15 @@ aux3.innerHTML += " " + dat.length;
 
 //var aux1 = document.getElementById("aux1");
 //aux1.innerHTML ="Nao";
-//d3.csv("data/dset.csv", function(data){
-//    aux1.innerHTML += " " + clothing.length;
-//    console.log(data);
-//    console.log(data[0]);
-//});
+//var datil = [];
+d3.csv("data/dset.csv", function(data){
+    aux1.innerHTML += " " + data.length;
+    console.log(data);
+    console.log(data[0]);
+    datil = data;
+});
+
+
 
 //for(var i=0; i < 2; i++) {
 //        console.log("ho");        
