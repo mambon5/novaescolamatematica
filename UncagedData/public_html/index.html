@@ -19,10 +19,36 @@ and open the template in the editor.
          <div id="aux1">Alejandro</div>
          <div id="aux2">aux2</div>
          <div id="aux3">aux3</div>
-         <svg width="600" height="500"></svg>
+         <svg width="800" height="500"></svg>
+         
+        <!-- open source graph and math libraries I downloaded -->
+        <script src="lib/d3/d3.js"></script>
+        <script src="lib/mathjs/math.js"></script>
         
-        <script src="d3/d3.js"></script>
-        <script src="js/plot1.js"></script>
+         <!-- functions we need to add to them -->
+        <script src="js/functions/covariance.js"></script>
+        
+        <!-- working sheet -->
+        <script src="js/plot2.js"></script>
        
+        
+        <svg xmlns="http://www.w3.org/2000/svg"
+            version="1.1" width="5cm" height="5cm">
+         <desc>Two groups, each of two rectangles</desc>
+         <g id="group1" fill="red" transform="translate(0,50)">
+           <rect x="1cm" y="1cm" width="1cm" height="1cm"/>
+           <rect x="3cm" y="1cm" width="1cm" height="1cm"/>
+         </g>
+         <g id="group2" fill="blue">
+           <rect x="1cm" y="3cm" width="1cm" height="1cm"/>
+           <rect x="3cm" y="3cm" width="1cm" height="1cm"/>
+         </g>
+
+         <!-- Show outline of viewport using 'rect' element -->
+         <rect x=".01cm" y=".01cm" width="4.98cm" height="4.98cm"
+               fill="none" stroke="blue" stroke-width=".02cm"/>
+       </svg>
+        
+        
     </body>
 </html>

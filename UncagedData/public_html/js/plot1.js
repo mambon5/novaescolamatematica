@@ -63,9 +63,10 @@ var xScale = d3.scaleBand().range ([0, width]).padding(0.4),
 var g = svg.append("g")
            .attr("transform", "translate(" + 100 + "," + 100 + ")");
 
-
+var datan = [];
 d3.csv("data/prova2.csv").then(function(data) {
-//fent de fet el gràfic
+    datan= data;
+//fent de fet el gràfic de barres
         xScale.domain(data.map(function(d) { return d.year; }));
         yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
 
@@ -96,7 +97,7 @@ d3.csv("data/prova2.csv").then(function(data) {
 });
 
 
-
+console.log(datan);
 
 
 
