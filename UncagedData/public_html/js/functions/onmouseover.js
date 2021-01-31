@@ -29,3 +29,34 @@ aux1.innerHTML = d.x + ", " +d.y + " scaled: " + xScale(d.x) + ", " +
 
             // Select text by id and then remove
           }
+          
+          
+          function handleMouseOver2(d, i) {  // Add interactivity
+
+            // Use D3 to select element, change color and size
+            d3.select(this)
+            .attr("fill", "purple");
+           
+           svg
+                   .append("text")         // append text  
+                   .attr("class", "mark")
+                   .attr("fill", "blue")
+                   
+    .attr("x", xScale(i.year) + 90 )           // set x position of left side of text
+    .attr("y", yScale(i.value) +80 )          // set y position of bottom of text
+                      .text(i.year + ", $" + i.value);          // define the text to display
+
+            // Specify where to put label of text
+           
+          }
+          
+        function handleMouseOut2(d, i) {
+            // Use D3 to select element, change color back to normal
+             d3.select(this)
+            .attr("fill", "black");
+            
+            svg.selectAll(".mark")
+                    .text("");
+
+            // Select text by id and then remove
+          }

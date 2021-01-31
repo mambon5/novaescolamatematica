@@ -91,9 +91,10 @@ d3.csv("data/prova2.csv").then(function(data) {
          .attr("x", function(d) { return xScale(d.year); })
          .attr("y", function(d) { return yScale(d.value); })
          .attr("width", xScale.bandwidth())
-         .attr("height", function(d) { return height - yScale(d.value); });
-
-         g.selectAll(".bar").style("fill", "green");
+         .attr("height", function(d) { return height - yScale(d.value); })
+        .on("mouseover", handleMouseOver2)
+         .on("mouseout", handleMouseOut2);
+         
 });
 
 
