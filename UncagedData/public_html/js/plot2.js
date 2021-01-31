@@ -72,4 +72,4 @@ d3.csv("data/prova2.csv").then(function(data) {
 //console.log(data2);
 var ar = new Array(3).fill(1);
 aux3.innerHTML = "covariance of [1,2,3] and [2,4,6]: " +  covariance([1,2,3],[2,4,6]);
-aux2.innerHTML = ((1-2)*(2-4) +(4-4)*(2-2) +(3-2)*(6-4))/2
+aux2.innerHTML = ((1-2)*(2-4) +(4-4)*(2-2) +(3-2)*(6-4))/2;
