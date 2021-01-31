@@ -8,8 +8,8 @@ function handleMouseOver(d, i) {  // Add interactivity
            svg
                    .append("text")         // append text  
                    .attr("class", "mark")
-    .attr("x", xScale(i.year) + 20 )           // set x position of left side of text
-    .attr("y", yScale(i.value) +100 )          // set y position of bottom of text
+    .attr("x", xScale(i.year) + 60 )           // set x position of left side of text
+    .attr("y", yScale(i.value) +80 )          // set y position of bottom of text
     .text(i.year + ", $" + i.value);          // define the text to display
 
 aux1.innerHTML = d.x + ", " +d.y + " scaled: " + xScale(d.x) + ", " +

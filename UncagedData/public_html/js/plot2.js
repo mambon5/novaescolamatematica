@@ -49,7 +49,7 @@ d3.csv("data/prova2.csv").then(function(data) {
          .data(data)
          .enter().append("circle")
          .attr("class", "dot")
-         .attr("cx", function(d) { return xScale(d.year); })
+         .attr("cx", function(d) { return xScale(d.year)+25; })
          .attr("cy", function(d) { return yScale(d.value); })
          .attr("r", 5)
          .on("mouseover", handleMouseOver)
