@@ -17,6 +17,14 @@ var xScale = d3.scaleBand().range ([0, width]).padding(0.4),
 var g = svg.append("g")
            .attr("transform", "translate(" + 100 + "," + 100 + ")");
 
+var radius = 4;
+var circleAttrs = {
+          cx: function(d) { return xScale(d.year); },
+          cy: function(d) { return yScale(d.value); },
+          r: radius
+      };
+
+
 d3.csv("data/prova2.csv").then(function(data) {
     datan = data;
 //fent de fet el scatterplot
@@ -43,9 +51,19 @@ d3.csv("data/prova2.csv").then(function(data) {
          .attr("class", "dot")
          .attr("cx", function(d) { return xScale(d.year); })
          .attr("cy", function(d) { return yScale(d.value); })
-         .attr("r", 5);
-
-         g.selectAll(".dot").style("fill", "purple");
+         .attr("r", 5)
+         .on("mouseover", handleMouseOver)
+         .on("mouseout", handleMouseOut);
+ 
+// svg.selectAll("circle")
+//         .data(data)
+//         .enter()
+// .enter().append("circle")
+//  .attr(circleAttrs)
+//        .on("mouseover", handleMouseOver)
+//         .on("mouseout", handleMouseOut);
+// 
+//         g.selectAll(".dot").style("fill", "purple");
 });
 
 
