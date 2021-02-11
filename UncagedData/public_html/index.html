@@ -9,19 +9,33 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="style.css">
         
     </head>
     <body>
         <div>Scatter plot amb punts que es poden clicar</div>
         <div id="region">plot?</div>
-        <p>Hola </p>
-         <div id="aux1">Alejandro</div>
-         <div id="aux2">aux2</div>
-         <div id="aux3">aux3</div>
-         <svg width="800" height="500" id="svg1"></svg>
+
+       
+         
+
+        <p>Hola</p>
+        <div id="aux1">Alejandro</div>
+        <div id="aux2">aux2</div>
+        <div id="aux3">aux3</div>
+        <div id="drop-area">
+            <form class="my-form">
+              <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+              <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+              <label class="button" for="fileElem">Select some files</label>
+            </form>
+            <div id="gallery"></div>
+        </div>
+        <svg width="800" height="500" id="svg1"></svg>
          <div id="aux3">aux3</div>
          <svg width="1000" height="600" id="svg2"></svg>
+         
+
         <!-- open source graph and math libraries I downloaded -->
         <script src="lib/d3/d3.js"></script>
         <script src="lib/mathjs/math.js"></script>
@@ -29,6 +43,7 @@ and open the template in the editor.
          <!-- functions we need to add to them -->
         <script src="js/functions/covariance.js"></script>
         <script src="js/functions/onmouseover.js"></script>
+        <script src="js/functions/droparea.js"></script>
         
         <!-- working sheet -->
         <script src="js/plot1.js"></script>
