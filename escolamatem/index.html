@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<title>Escola de Mates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3css/4/w3.css">
+<link rel="stylesheet" href="lib/w3-theme-black.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="w3css/font-awesome.min.css">
+<!--adding MATH jax for tex writing-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Tanca
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Més serveis disponibles</a>
+  <a href="#" class="w3-bar-item w3-button">Preparació per exàmens</a>
+  <a href="#" class="w3-bar-item w3-button">Anàlisi de dades</a>
+  <a href="#" class="w3-bar-item w3-button">Jocs matemàtics</a>
+  <a href="#" class="w3-bar-item w3-button">Un cafetó amb nosaltres</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>NEM</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Equip</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Filosofia</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Preus</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contacte</a>
+  
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Projectes <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#plansp" class="w3-bar-item w3-button">Plans Projectius</a>
+      <a href="#hpind" class="w3-bar-item w3-button">Desigualtat en HRL</a>
+      <a href="#other" class="w3-bar-item w3-button">Altres</a>
+    </div>
+  </div>
+      <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Language <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#index.html" class="w3-bar-item w3-button">Català</a>
+      <a href="index_esp.html" class="w3-bar-item w3-button">Español</a>
+      <a href="#other" class="w3-bar-item w3-button">English</a>
+    </div>
+  </div>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="tryw3css_templates_website.htm#team" class="w3-bar-item w3-button">Team</a>
+    <a href="tryw3css_templates_website.htm#work" class="w3-bar-item w3-button">Work</a>
+    <a href="tryw3css_templates_website.htm#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="tryw3css_templates_website.htm#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../w3images/tibidabo_3.jpg" alt="tibidabo" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Nova Escola Matemàtica</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Vols aprendre matemàtiques?</h4>
+      <h5>Apunta't a les nostres clases <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Les matemàtiques (i altres assignatures) s'haurien d'explicar diferent..</p>
+      <p>Mira la resta de la nostra pàgina web per saber-ne més!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Guiar en comptes d'instruir</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>EL NOSTRE EQUIP</h2>
+<p>Coneix l'equip - els treballadors de camp:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="w3images/roma.jpg" alt="Boss" style="idth:150px;height:150px" class="w3-circle w3-hover-opacity">
+  <h3>Romà Masana</h3>
+  <p>Dissenyador Web</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="w3images/roma.jpg" alt="Boss" style="idth:150px;height:150px" class="w3-circle w3-hover-opacity">
+  <h3>Romà Masana</h3>
+  <p>Suport 24/7</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="w3images/roma.jpg" alt="Boss" style="idth:150px;height:150px" class="w3-circle w3-hover-opacity">
+  <h3>Romà Masana</h3>
+  <p>Jefe</p>
+</div>
+
+<div class="w3-quarter">
+<img src="w3images/roma.jpg" alt="Boss" style="width:150px;height:150px" class="w3-circle w3-hover-opacity">
+  <h3>Romà Masana</h3>
+  <p>Mestre</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-third">
+<h2>Prespectiva d'ensenyança</h2>
+<p>La intenció de la Nova Escola Matemàtica és senzilla: donar el mínim d'instruccions a l'estudianta per tal que ella sigui la que trobi el camí. No volem ser una escola tradicional on l'alumna primer escolta, i després repeteix uns exercicis concrets. </p> 
+<h4>Ho volem fer a la inversa: </h4>
+<p>Volem escoltar primer a la alumna, quin problema vol solucionar. Després preguntem quines idees té i a partir d'aquí l'animem a explorar les que nosaltres com a profesors o guies 
+sabem que poden solucionar el problema. La intenció és que l'alumna treballi i pensi per ella mateixa, i no és limiti a copiar i repetir mecànicament com pasa actualmente en quasi totes les
+escoles de Catalunya.</p>
+</div>
+    <div class="w3-half">
+        <p></p>
+</div>
+
+
+    
+<div class="w3-third" id="plansp">
+<div class="w3-card w3-white">
+  <img src="../w3images/congostmr.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container" >
+  <h3>Plans projectius</h3>
+  <h4><b>Recerca</b> en matemàtiques</h4>
+  <p>Projecte actual d'un dels nostres professors</p>
+  <p>L'objectiu és resoldre una espècie de trencaclosques amb 157 punts i 157 línies de
+  manera que cada dos línies interseccionin exactament en un únic punt.</p>
+  <p>Aquest trencaclosques resta sense resoldre per cap matemàtica del món a dia d'avui.</p>
+ 
+  </div>
+  </div>
+</div>
+
+
+<div class="w3-third" id="hpind">
+<div class="w3-card w3-white">
+    
+  <img src="../w3images/basil.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container" >
+  <h3>Hipòtesis d'inducció en desigualtat</h3>
+  <h4><b>Recerca </b>en matemàtiques</h4>
+  <p>Projecte actual</p>
+  <p>Un profe està estudiant tota la teoria matemàtica de les hipòtesis d'inducció en una regressió lineal 
+  i ha descobert que la teoria seria quasi la mateixa quan la hipòtesi no és una equació del tipus \[ H_0 : H\beta = c \]</p>
+  Sinó aquest aspecte:  \[ H_0 : H\beta \leq c \]
+  </p>
+  </div>
+  </div>
+</div>
+    
+    <div class="w3-third" id="other">
+<div class="w3-card w3-white">
+    
+  <img src="../w3images/volley.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container" >  
+  <h3>Altres projectes</h3>
+  <h4>Inclouen</h4>
+  <ul>
+      <li>La <b>predicció de la velocitat del vent</b> en 3700 estacions meteorològiques a Europa, usant el model físic 
+      de l'institut meteorològic europeu ECMWF. Projecte acabat. S'ha fet adjust estadístic de la predicció del model
+      usant la tècnica Random Forests de ML, i models avançats de regressió anomenats GAMLSS de R.</li>
+      <li>L'estudi de la funció generador de nombres aleatoris de Neiderreiter usada en <b>criptologia</b>.</li>
+      <li>La creació d'un model de Random Forests (en <b>machine learning</b>) que manté la eficàcia i és més senzill, a partir de la idea d'usar múltiples variables per a fer cada 
+      ramificació.</li>
+      <li>Establir una simbologia adecuada per promoure l'escriptura en base <b>hexadecimal</b> en sustitució de l'actual menys eficaç sistema decimal.</li>
+  </ul>
+  </div>
+  </div>
+</div>
+
+    
+    
+
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Preus</h2>
+    <p>Donem clases particulars, en grup, presencials i telemàtiques. El preu que surt és per 1h de sessió.</p><br>
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Particular ESO</p>
+        </li>
+        <li class="w3-padding-16"><b></b> Presencial o telemàtica</li>
+        <li class="w3-padding-16"><b>1</b> sol alumne a clase</li>
+        <li class="w3-padding-16"><b></b> Si és presencial, serà al carrer Fernando Poo 41, Barcelona</li>
+        <li class="w3-padding-16"><b>1h</b> de clase</li>
+        <li class="w3-padding-16"><b>ESO</b> clase de matemàtiques o física</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 18</h2>
+          <span class="w3-opacity">per clase</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">En grup ESO</p>
+        </li>
+               <li class="w3-padding-16"><b></b> Presencial o telemàtica</li>
+        <li class="w3-padding-16"><b>4</b> alumnes màxim a la clase</li>
+        <li class="w3-padding-16"><b></b> Si és presencial, serà al carrer Fernando Poo 41, Barcelona</li>
+        <li class="w3-padding-16"><b>1h</b> de clase</li>
+        <li class="w3-padding-16"><b>ESO</b> clase de matemàtiques o física</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 10</h2>
+          <span class="w3-opacity">per clase</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Particular Batxillerat</p>
+        </li>
+        <li class="w3-padding-16"><b></b> Presencial o telemàtica</li>
+        <li class="w3-padding-16"><b>1</b> sol alumne a clase</li>
+        <li class="w3-padding-16"><b></b> Si és presencial, serà al carrer Fernando Poo 41, Barcelona</li>
+        <li class="w3-padding-16"><b>1h</b> de clase</li>
+        <li class="w3-padding-16"><b>Batxillerat</b> clase de matemàtiques o física</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 25</h2>
+          <span class="w3-opacity">per clase</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">En grup batxillerat</p>
+        </li>
+               <li class="w3-padding-16"><b></b> Presencial o telemàtica</li>
+        <li class="w3-padding-16"><b>4</b> alumnes màxim a la clase</li>
+        <li class="w3-padding-16"><b></b> Si és presencial, serà al carrer Fernando Poo 41, Barcelona</li>
+        <li class="w3-padding-16"><b>1h</b> de clase</li>
+        <li class="w3-padding-16"><b>batxillerat</b> clase de matemàtiques o física</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 15</h2>
+          <span class="w3-opacity">per clase</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    
+     <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Particular Universitat</p>
+        </li>
+        <li class="w3-padding-16"><b></b> Presencial o telemàtica</li>
+        <li class="w3-padding-16"><b>1</b> sol alumne a clase</li>
+        <li class="w3-padding-16"><b></b> Si és presencial, serà al carrer Fernando Poo 41, Barcelona</li>
+        <li class="w3-padding-16"><b>1h</b> de clase</li>
+        <li class="w3-padding-16"><b>Universitat</b> clase de matemàtiques</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 25</h2>
+          <span class="w3-opacity">per clase</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">En grup Universitat</p>
+        </li>
+               <li class="w3-padding-16"><b></b> Presencial o telemàtica</li>
+        <li class="w3-padding-16"><b>4</b> alumnes màxim a la clase</li>
+        <li class="w3-padding-16"><b></b> Si és presencial, serà al carrer Fernando Poo 41, Barcelona</li>
+        <li class="w3-padding-16"><b>1h</b> de clase</li>
+        <li class="w3-padding-16"><b>Universitat</b> clase de matemàtiques </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 15</h2>
+          <span class="w3-opacity">per clase</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    
+    
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contacta'ns</span></div>
+      <h3>Adreça</h3>
+      <p>Truca'ns, envia'ns un Whatsapp o vine't per fer un té i parlar del que vulguis.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Barcelona, Espanya</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+34 611 648 478</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;novaescolamatematica@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://www.w3schools.com/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Nom</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Missatge</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>Mmm'agrada!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="w3images/sat_fernandpoo.png" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Segueix-nos</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook-official"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Creat per <a href="http://romamasana.top" target="_blank">Romà</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Vés a dalt</span>   
+    <a class="w3-button w3-theme-arrow" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
