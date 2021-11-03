@@ -294,8 +294,27 @@
 }
 
 .fa-check:before {
-	content: "\f00c"
+    background-image: url("../icons/tick_white.png");
+    background-size: 20px 20px;
+    position:relative;
+    top:5px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+	content:"";
 }
+
+.w3-button:hover .fa-check:before{ /* change tick icon of hovered button */
+    background-image: url("../icons/tick.png");
+    background-size: 20px 20px;
+    position:relative;
+    top:5px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+	content:"";
+}
+
 
 .fa-remove:before,
 .fa-close:before,
@@ -336,7 +355,7 @@
 }
 
 .fa-home:before {
-    background-image: url("../icons/home.png");
+    background-image: url("../w3images/logo.png");
     background-size: 20px 20px;
     position:relative;
     top:5px;
@@ -2474,6 +2493,17 @@
     display: inline-block;
     width: 40px; 
     height: 40px;
+	content:"";
+}
+
+.fa-google-small:before {
+    background-image: url("../icons/google.png");
+    background-size: 20px 20px;
+    position:relative;
+    top:5px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
 	content:"";
 }
 

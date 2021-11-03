@@ -10,114 +10,64 @@
 <!--adding MATH jax for tex writing-->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-    function apuntar(clase) {
-        missatge = document.getElementsByName("message")[0];
-        if(clase =="part eso") {
-            missatge.value = "Hola, me gustaría apuntarme a una clase particular de matemáticas de nivel ESO.";
-        } else if(clase == "grup eso") {
-            missatge.value = "Hola, me gustaría apuntarme a una clase en grupo de matemáticas de nivel ESO.";
-        } else if(clase == "part batx") {
-            missatge.value = "Hola, me gustaría apuntarme a una clase particular de matemáticas de nivel Bachillerato.";
-        } else if(clase == "grup batx") {
-            missatge.value = "Hola, me gustaría apuntarme a una clase en grupo de matemáticas de nivel Bachillerato.";
-        } else if(clase == "part uni") {
-            missatge.value = "Hola, me gustaría apuntarme a una clase particular de matemáticas de nivel Universitario.";
-        } else if(clase == "grup uni") {
-            missatge.value = "Hola, me gustaría apuntarme a una clase en grupo de matemáticas de nivel Universitario.";
-        }
-        
-        location.href = "#form"; 
-    }
-</script>
-
-
 <body id="myPage">
 
 <!-- Sidebar on click -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Cerrar
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
     <i class="fa fa-remove"></i>
   </a>
-  <a href="#" class="w3-bar-item w3-button">Más servicios disponibles</a>
-  <a href="#" class="w3-bar-item w3-button">Preparación para exámenes</a>
-  <a href="#" class="w3-bar-item w3-button">Análisis de datos</a>
-  <a href="#" class="w3-bar-item w3-button">Juegos matemáticos</a>
-  <a href="#" class="w3-bar-item w3-button">Un cafecito con nosotros</a>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 5</a>
 </nav>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-theme-d2 w3-left-align  w3-hide-small">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#" class="w3-bar-item w3-button w3-teal  w3-hide-small">
-      <i class="fa fa-home w3-margin-right"></i>NEM </a>
- <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Equipo</a>
-    <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Filosofía</a>
-    <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Precios</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contacto</a>
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>NEM</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Equipo</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Filosofia</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Precios</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contacto</a>
+  
     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-button" title="Notifications">Proyectos <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-        <a href="#plansp" class="w3-bar-item w3-button">Planes Proyectivos</a>
-        <a href="#hpind" class="w3-bar-item w3-button">Desigualdad en HRL</a>
-        <a href="#other" class="w3-bar-item w3-button">Otros</a>
-      </div>
+    <button class="w3-button" title="Notifications">Proyectos <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#plansp" class="w3-bar-item w3-button">Planos Proyectivos</a>
+      <a href="#hpind" class="w3-bar-item w3-button">Desigualdad en HRL</a>
+      <a href="#other" class="w3-bar-item w3-button">Otros</a>
     </div>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-button" title="Notifications">ESP <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-        <a href="index.html" class="w3-bar-item w3-button">Català</a>
-        <a href="index_esp.html" class="w3-bar-item w3-button">Español</a>
-        <a href="index_eng.html" class="w3-bar-item w3-button">English</a>
-      </div>
-    </div>
-    <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search">
-      <i class="fa fa-google-small"></i>
-    </a>
   </div>
-  <!-- Navbar on small screens -->
-  <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align  w3-hide-large w3-hide-medium">
-      <div class="w3-bar w3-theme-d2 w3-left-align">
-        <a href="#" class="w3-bar-item w3-button w3-teal">
-          <i class="fa fa-home w3-margin-right"></i>NEM </a>
-        <div class="w3-dropdown-hover">
- <button class="w3-button" title="Notifications">navega <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="#team" class="w3-bar-item w3-button ">Equipo</a>
-            <a href="#work" class="w3-bar-item w3-button ">Filosofía</a>
-            <a href="#plansp" class="w3-bar-item w3-button ">Proyectos</a>
-            <a href="#pricing" class="w3-bar-item w3-button ">Precios</a>
-            <a href="#contact" class="w3-bar-item w3-button ">Contacto</a>
-          </div>
-            
-        </div>
-          <div class="w3-dropdown-hover ">
-              <button class="w3-button" title="Notifications">ESP <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                <a href="index.html" class="w3-bar-item w3-button">Català</a>
-                <a href="index_esp.html" class="w3-bar-item w3-button">Español</a>
-                <a href="index_eng.html" class="w3-bar-item w3-button">English</a>
-              </div>
-            </div>
-      </div>
+      <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Language <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="index.html" class="w3-bar-item w3-button">Català</a>
+      <a href="index_esp.html" class="w3-bar-item w3-button">Español</a>
+      <a href="#other" class="w3-bar-item w3-button">English</a>
     </div>
+  </div>
+  <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="tryw3css_templates_website.htm#team" class="w3-bar-item w3-button">Team</a>
+    <a href="tryw3css_templates_website.htm#work" class="w3-bar-item w3-button">Work</a>
+    <a href="tryw3css_templates_website.htm#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="tryw3css_templates_website.htm#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Search</a>
   </div>
 </div>
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="w3images/tibidabo_3.jpg" alt="tibidabo" class="w3-hide-small" style="width:100%;">
-  <img src="w3images/tibidabo_4.jpg" alt="tibidabo" class="w3-hide-large w3-hide-medium" style="width:100%;">
+  <img src="../w3images/tibidabo_3.jpg" alt="tibidabo" style="width:100%;min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='inline'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Nova Escola Matemàtica</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Nova Escola Matemàtica</button>
   </div>
 </div>
 
@@ -126,7 +76,7 @@
   <div class="w3-modal-content w3-card-4 w3-animate-top">
     <header class="w3-container w3-teal w3-display-container"> 
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>¿Quieres aprender matemáticas?</h4>
+        <h4>¿Quieres aprender matemáticas?</h4>
       <h5>Apúntate a nuestras clases <i class="fa fa-smile-o"></i></h5>
     </header>
     <div class="w3-container">
@@ -135,6 +85,8 @@
     </div>
     <footer class="w3-container w3-teal">
       <p>Guiar en vez de instruir</p>
+
+
     </footer>
   </div>
 </div>
@@ -168,12 +120,9 @@
 <img src="w3images/roma.jpg" alt="Boss" style="width:150px;height:150px" class="w3-circle w3-hover-opacity">
   <h3>Romà Masana</h3>
   <p>Maestro</p>
-  <ul>
-      <li>Graduado en matemáticas en la UPC Barcelona</li>
-  <li>Máster en matemáticas en la Nijmegen Universiteit (Países Bajos)</li>
-  <li>PhD en matemáticas en la IIT de Chicago, EEUU (inacabado)</li>
-  </ul>
 </div>
+
+
 
 </div>
 </div>
@@ -182,7 +131,7 @@
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
 <div class="w3-third">
-<h2>Perspectiva de enseñanza</h2>
+<h2>Prespectiva de enseñanza</h2>
 <p>La intención de la Nueva Escuela Matemática es sencilla: dar el mínimo de instrucciones a la estudiante para que ella sea la que encuentre el camino. No queremos ser una escuela tradicional donde la alumna primero escucha, y después repite unos ejercicios concretos. </p>
 <h4>Queremos hacerlo a la inversa: </h4>
 <p>Queremos escuchar primero a la alumna, qué problema quiere solucionar. Después preguntamos qué ideas tiene ya partir de ahí le animamos a explorar las que nosotros como profesores o guías
@@ -196,9 +145,8 @@ escuelas de Cataluña.</p>
 
     
 <div class="w3-third" id="plansp">
-    <br>
 <div class="w3-card w3-white">
-  <img src="w3images/congostmr.jpg" alt="Snow" style="width:100%">
+  <img src="../w3images/congostmr.jpg" alt="Snow" style="width:100%">
   <div class="w3-container" >
   <h3>Planes proyectivos</h3>
   <h4><b>Investigación</b> en matemáticas</h4>
@@ -206,21 +154,22 @@ escuelas de Cataluña.</p>
   <p>El objetivo es resolver una especie de rompecabezas con 157 puntos y 157 líneas de
   de modo que cada dos líneas interseccionen exactamente en un único punto.</p>
   <p>Este rompecabezas queda sin resolver por ninguna matemática del mundo a día de hoy.</p>
+
+
  
   </div>
   </div>
 </div>
-    
+
 
 <div class="w3-third" id="hpind">
-      <br>
 <div class="w3-card w3-white">
     
-  <img src="w3images/basil.jpg" alt="Lights" style="width:100%">
+  <img src="../w3images/basil.jpg" alt="Lights" style="width:100%">
   <div class="w3-container" >
   <h3>Hipótesis de inducción en desigualdad</h3>
   <h4><b>Investigación </b>en matemáticas</h4>
-  <p>Uno de los proyectos actuales</p>
+  <p>Proyecto actual</p>
   <p>Un profe está estudiando toda la teoría matemática de las hipótesis de inducción en una regresión lineal
   y ha descubierto que la teoría sería casi la misma cuando la hipótesis no es una ecuación del tipo \[ H_0 : H\beta = c \]
   Sino este aspecto: \[ H_0 : H\beta \leq c \]
@@ -230,10 +179,9 @@ escuelas de Cataluña.</p>
 </div>
     
     <div class="w3-third" id="other">
-          <br>
 <div class="w3-card w3-white">
     
-  <img src="w3images/volley.jpg" alt="Lights" style="width:100%">
+  <img src="../w3images/volley.jpg" alt="Lights" style="width:100%">
   <div class="w3-container" >  
   <h3>Otros proyectos</h3>
   <h4>Incluyen</h4>
@@ -281,7 +229,7 @@ escuelas de Cataluña.</p>
           <span class="w3-opacity">por clase</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button onclick="apuntar('part eso')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Apuntarse</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </li>
       </ul>
     </div>
@@ -301,7 +249,7 @@ escuelas de Cataluña.</p>
           <span class="w3-opacity">por clase</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button onclick="apuntar('grup eso')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Apuntarse</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </li>
       </ul>
     </div>
@@ -309,7 +257,7 @@ escuelas de Cataluña.</p>
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
-          <p class="w3-xlarge">Particular Bachillerato</p>
+         <p class="w3-xlarge">Particular Bachillerato</p>
         </li>
         <li class="w3-padding-16"><b></b> Presencial o telemática</li>
         <li class="w3-padding-16"><b>1</b> solo alumno en clase</li>
@@ -321,7 +269,7 @@ escuelas de Cataluña.</p>
           <span class="w3-opacity">por clase</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button onclick="apuntar('part batx')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Apuntarse</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </li>
       </ul>
     </div>
@@ -329,7 +277,7 @@ escuelas de Cataluña.</p>
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme-l2">
-          <p class="w3-xlarge">En grupo bachillerato</p>
+         <p class="w3-xlarge">En grupo bachillerato</p>
         </li>
                <li class="w3-padding-16"><b></b> Presencial o telemática</li>
         <li class="w3-padding-16"><b>4</b> alumnos máximo en clase</li>
@@ -341,7 +289,7 @@ escuelas de Cataluña.</p>
           <span class="w3-opacity">por clase</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button onclick="apuntar('grup batx')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Apuntarse</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </li>
       </ul>
     </div>
@@ -361,7 +309,7 @@ escuelas de Cataluña.</p>
           <span class="w3-opacity">por clase</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button onclick="apuntar('part uni')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Apuntarse</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </li>
       </ul>
     </div>
@@ -369,7 +317,7 @@ escuelas de Cataluña.</p>
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme-l2">
-          <p class="w3-xlarge">En grupo Universidad</p>
+         <p class="w3-xlarge">En grupo Universidad</p>
         </li>
                <li class="w3-padding-16"><b></b> Presencial o telemática</li>
         <li class="w3-padding-16"><b>4</b> alumnos máximo en clase</li>
@@ -381,7 +329,7 @@ escuelas de Cataluña.</p>
           <span class="w3-opacity">por clase</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button onclick="apuntar('grup uni')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Apuntarse</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </li>
       </ul>
     </div>
@@ -394,34 +342,29 @@ escuelas de Cataluña.</p>
   <div class="w3-row">
     <div class="w3-col m5">
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contáctanos</span></div>
-      <h3>Dirección</h3>
+     <h3>Dirección</h3>
       <p>Llámanos, envíanos un Whatsapp o vente para hacer un té y hablar de lo que quieras.</p>
       <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Barcelona, ​​España</p>
       <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+34 611 648 478</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;newmathematicalschool@gmail.com</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;novaescolamatematica@gmail.com</p>
     </div>
     <div class="w3-col m7">
-      <form id="form" class="w3-container w3-card-4 w3-padding-16 w3-white" action="sendform.php" target="_blank" method="post">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://www.w3schools.com/action_page.php" target="_blank">
       <div class="w3-section">      
         <label>Nombre</label>
-        <input class="w3-input" type="text" name="name" required placeholder="Joana Fèlix">
+        <input class="w3-input" type="text" name="Name" required>
       </div>
       <div class="w3-section">      
         <label>Email</label>
-        <input class="w3-input" type="text" name="email" required placeholder="joanamiquel@gmail.com">
-      </div>
-          <div class="w3-section">      
-        <label>Telefono</label>
-        <input class="w3-input" type="text" name="phone" required placeholder="643 633 632">
+        <input class="w3-input" type="text" name="Email" required>
       </div>
       <div class="w3-section">      
-        <label>Mensaje</label>   
-        <textarea  rows = "4" cols = "60" class="w3-input" name="message" required>
-         </textarea>
+        <label>Mensaje</label>
+        <input class="w3-input" type="text" name="Message" required>
       </div>  
       <input class="w3-check" type="checkbox" checked name="Like">
-      <label>¡Me gusta!</label>
-      <button type="submit" name="submit" class="w3-button w3-right w3-theme">Enviar</button>
+      <label>Mme regusta!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
       </form>
     </div>
   </div>
@@ -436,11 +379,11 @@ escuelas de Cataluña.</p>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook-official"></i></a>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google"></i></a>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
- <p>Creado por <a href="http://romamasana.top" target="_blank">Romà</a></p>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Creado por <a href="http://romamasana.top" target="_blank">Romà</a></p>
 
-  <div style="position:relative;bottom:10px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal">Ir arriba</span>   
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Ve arriba</span>   
     <a class="w3-button w3-theme-arrow" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>

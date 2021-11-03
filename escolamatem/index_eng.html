@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<title> Escola de Mates </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3css/4/w3.css">
+<link rel="stylesheet" href="lib/w3-theme-black.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="w3css/font-awesome.min.css">
+<!--adding MATH jax for tex writing-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    function apuntar(clase) {
+        missatge = document.getElementsByName("message")[0];
+        if(clase == "part eso") {
+            missatge.value = "Hello, I would like to join an secondary education level math private class.";
+        } else if(clase == "grup eso") {
+            missatge.value = "Hello, I would like to join an secondary education math group class.";
+        } else if(clase == "part batx") {
+            missatge.value = "Hello, I would like to sign up for a high school math tutoring class.";
+        } else if(clase == "grup batx") {
+            missatge.value = "Hello, I would like to join a high school math group class.";
+        } else if(clase == "part uni") {
+            missatge.value = "Hello, I would like to sign up for a college level math tutoring.";
+        } else if(clase == "grup uni") {
+            missatge.value = "Hello, I would like to join a college level math group class.";
+        }
+        
+        location.href = "#form";
+    }
+</script>
+
+<body id="myPage">
+
+<!--<! - Sidebar on click ->-->
+<nav class = "w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style = "display: none; z-index: 2" id = "mySidebar">
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal"> Close
+    <i class = "fa fa-remove"> </i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button"> More services available </a>
+  <a href="#" class="w3-bar-item w3-button"> Exam Preparation </a>
+  <a href="#" class="w3-bar-item w3-button"> Data analysis </a>
+  <a href="#" class="w3-bar-item w3-button"> Math games </a>
+  <a href="#" class="w3-bar-item w3-button"> A coffee with us </a>
+</nav>
+
+<!--<! - Navbar ->-->
+<div class = "w3-top">
+  <div class = "w3-bar w3-theme-d2 w3-left-align w3-hide-small">
+    <a class = "w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href = "javascript: void (0);" onclick = "openNav ()">
+      <i class = "fa fa-bars"> </i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button w3-teal w3-hide-small">
+      <i class = "fa fa-home w3-margin-right"> </i> NEM </a>
+ <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Team </a>
+    <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Philosophy </a>
+    <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Pricing </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Contact </a>
+    <div class = "w3-dropdown-hover w3-hide-small">
+      <button class = "w3-button" title = "Notifications"> Projects <i class = "fa fa-caret-down"> </i>
+      </button>
+      <div class = "w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#plansp" class="w3-bar-item w3-button"> Project Plans </a>
+        <a href="#hpind" class="w3-bar-item w3-button"> HRL Inequality </a>
+        <a href="#other" class="w3-bar-item w3-button"> Others </a>
+      </div>
+    </div>
+    <div class = "w3-dropdown-hover w3-hide-small">
+      <button class = "w3-button" title = "Notifications"> ENG <i class = "fa fa-caret-down"> </i>
+      </button>
+      <div class = "w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="index.html" class="w3-bar-item w3-button"> Català </a>
+        <a href="index_esp.html" class="w3-bar-item w3-button"> Spanish </a>
+        <a href="index_eng.html" class="w3-bar-item w3-button">English</a>
+      </div>
+    </div>
+    <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search">
+      <i class = "fa fa-google-small"> </i>
+    </a>
+  </div>
+<!--  <! - Navbar on small screens ->-->
+  <div class = "w3-top">
+    <div class = "w3-bar w3-theme-d2 w3-left-align w3-hide-large w3-hide-medium">
+      <div class = "w3-bar w3-theme-d2 w3-left-align">
+        <a href="#" class="w3-bar-item w3-button w3-teal">
+          <i class = "fa fa-home w3-margin-right"> </i> NEM </a>
+        <div class = "w3-dropdown-hover">
+ <button class = "w3-button" title = "Notifications"> browse <i class = "fa fa-caret-down"> </i>
+          </button>
+          <div class = "w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="#team" class="w3-bar-item w3-button "> Team </a>
+            <a href="#work" class="w3-bar-item w3-button "> Philosophy </a>
+            <a href="#plansp" class="w3-bar-item w3-button "> Projects </a>
+            <a href="#pricing" class="w3-bar-item w3-button "> Pricing </a>
+            <a href="#contact" class="w3-bar-item w3-button "> Contact </a>
+          </div>
+            
+        </div>
+          <div class = "w3-dropdown-hover">
+              <button class = "w3-button" title = "Notifications"> ENG <i class = "fa fa-caret-down"> </i>
+              </button>
+              <div class = "w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="index.html" class="w3-bar-item w3-button"> Català </a>
+                <a href="index_esp.html" class="w3-bar-item w3-button"> Spanish </a>
+        <a href="index_eng.html" class="w3-bar-item w3-button">English</a>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<! - Image Header ->-->
+<div class = "w3-display-container w3-animate-opacity">
+  <img src = "w3images/tibidabo_3.jpg" alt = "tibidabo" class = "w3-hide-small" style = "width: 100%;">
+  <img src = "w3images/tibidabo_4.jpg" alt = "tibidabo" class = "w3-hide-large w3-hide-medium" style = "width: 100%;">
+  <div class = "w3-container w3-display-bottomleft w3-margin-bottom">
+    <button onclick = "document.getElementById ('id01'). style.display = 'inline'" class = "w3-button w3-xlarge w3-theme w3-hover-teal" title = "Go To W3.CSS"> Nova Escola Matemàtica </button>
+  </div>
+</div>
+
+<!--<! - Modal ->-->
+<div id = "id01" class = "w3-modal">
+  <div class = "w3-modal-content w3-card-4 w3-animate-top">
+    <header class = "w3-container w3-teal w3-display-container">
+      <span onclick = "document.getElementById ('id01'). style.display = 'none'" class = "w3-button w3-teal w3-display-topright"> <i class = "fa fa-remove"> </i> </span>
+      <h4> Do you want to learn math? </h4>
+      <h5> Join our classes <i class = "fa fa-smile-o"> </i> </h5>
+    </header>
+    <div class = "w3-container">
+      <p> Mathematics (and other subjects) should be explained differently. </p>
+      <p> Check out the rest of our website to find out more! </p>
+    </div>
+    <footer class = "w3-container w3-teal">
+      <p> Guide instead of instruct </p>
+    </footer>
+  </div>
+</div>
+
+<!--<! - Team Container ->-->
+<div class = "w3-container w3-padding-64 w3-center" id = "team">
+<h2> OUR TEAM </h2>
+<p> Meet the team - the field workers: </p>
+
+<div class = "w3-row"> <br>
+
+<div class = "w3-quarter">
+  <img src = "w3images/roma.jpg" alt = "Boss" style = "width: 150px; height: 150px" class = "w3-circle w3-hover-opacity">
+  <h3> Romà Masana </h3>
+  <p> Web Designer </p>
+</div>
+
+<div class = "w3-quarter">
+  <img src = "w3images/roma.jpg" alt = "Boss" style = "width: 150px; height: 150px" class = "w3-circle w3-hover-opacity">
+  <h3> Romà Masana </h3>
+  <p> 24/7 support </p>
+</div>
+
+<div class = "w3-quarter">
+  <img src = "w3images/roma.jpg" alt = "Boss" style = "width: 150px; height: 150px" class = "w3-circle w3-hover-opacity">
+  <h3> Romà Masana </h3>
+  <p> Boss </p>
+</div>
+
+<div class = "w3-quarter">
+<img src = "w3images/roma.jpg" alt = "Boss" style = "width: 150px; height: 150px" class = "w3-circle w3-hover-opacity">
+  <h3> Romà Masana </h3>
+  <p> Teacher </p>
+  <ul>
+      <li> Graduated in mathematics at UPC Barcelona </li>
+  <li> Master in Mathematics at Nijmegen Universiteit (Netherlands) </li>
+  <li> PhD in mathematics at IIT Chicago, USA (unfinished) </li>
+  </ul>
+</div>
+
+</div>
+</div>
+
+<!--<! - Work Row ->-->
+<div class = "w3-row-padding w3-padding-64 w3-theme-l1" id = "work">
+
+<div class = "w3-third">
+<h2> Teaching perspective </h2>
+<p> The intention of the New Mathematical School is simple: to give the student the minimum of instructions so that she is the one who finds the way. We do not want to be a traditional school where the student first listens, and then repeats specific exercises. </p>
+<h4> We want to do it in reverse: </h4>
+<p> We want to hear from the student first, what problem does she want to solve. Then we ask what ideas you have and from there we encourage you to explore those that we as teachers or guides
+we know they can fix the problem. The intention is that the student works and thinks for herself, and does not limit herself to copying and repeating mechanically as is currently the case in almost all classes.
+schools in Catalonia. </p>
+</div>
+    <div class = "w3-half">
+        <p> </p>
+</div>
+
+
+    
+<div class = "w3-third" id = "plansp">
+    <br>
+<div class = "w3-card w3-white">
+  <img src = "w3images/congostmr.jpg" alt = "Snow" style = "width: 100%">
+  <div class = "w3-container">
+  <h3> Projective plans </h3>
+  <h4> <b> Research </b> in mathematics </h4>
+  <p> Current project of one of our teachers </p>
+  <p> The objective is to solve a kind of puzzle with 157 points and 157 lines of
+  so that every two lines intersect at exactly one point. </p>
+  <p> This puzzle remains unsolved by any mathematics in the world today. </p>
+ 
+  </div>
+  </div>
+</div>
+    
+
+<div class = "w3-third" id = "hpind">
+      <br>
+<div class = "w3-card w3-white">
+    
+  <img src = "w3images/basil.jpg" alt = "Lights" style = "width: 100%">
+  <div class = "w3-container">
+  <h3> Inequality induction hypothesis </h3>
+  <h4> <b> Research </b> in mathematics </h4>
+  <p> One of the current projects </p>
+  <p> A teacher is studying all the mathematical theory of the induction hypotheses in a linear regression
+  and he has discovered that the theory would be almost the same when the hypothesis is not an equation of the type \ [H_0: H \ beta = c \]
+  But it looks like this: \ [H_0: H \ beta \ leq c \]
+  </p>
+  </div>
+  </div>
+</div>
+    
+    <div class = "w3-third" id = "other">
+        <br>
+<div class = "w3-card w3-white">
+    
+  <img src = "w3images/volley.jpg" alt = "Lights" style = "width: 100%">
+  <div class = "w3-container">
+  <h3> Other projects </h3>
+  <h4> Include </h4>
+  <ul>
+      <li> The <b> prediction of wind speed </b> at 3700 meteorological stations in Europe, using the physical model
+      of the European meteorological institute ECMWF. Finished project. Statistical adjustment of the model prediction has been made
+      using ML's Random Forests technique, and advanced regression models called GAMLSS by R. </li>
+      <li> The study of the Neiderreiter random number generator function used in <b> cryptology </b>. </li>
+      <li> The creation of a Random Forests model (in <b> machine learning </b>) that maintains efficiency and is simpler, based on the idea of ​​using multiple variables to make each
+      branching. </li>
+      <li> Establish a suitable symbology to promote writing in <b> hexadecimal </b> as a substitute for the current less efficient decimal system. </li>
+  </ul>
+  </div>
+  </div>
+</div>
+
+    
+    
+
+
+</div>
+
+<!--<! - Container ->-->
+<div class = "w3-container" style = "position: relative">
+  <a onclick = "w3_open()" class = "w3-button w3-xlarge w3-circle w3-teal"
+  style = "position: absolute; top: -28px; right: 24px"> + </a>
+</div>
+
+<!--<! - Pricing Row ->-->
+<div class = "w3-row-padding w3-center w3-padding-64" id = "pricing">
+   <h2> Prices </h2>
+    <p> We give private, group, face-to-face and online classes. The price that comes out is for 1 hour session. </P> <br>
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme">
+          <p class = "w3-xlarge"> secondary ed. private</p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or telematics </li>
+        <li class = "w3-padding-16"> <b> 1 </b> only student in class </li>
+        <li class = "w3-padding-16"> <b> </b> If you are in person, you will be at Calle Fernando Poo 41, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> secondary eduation </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> 18 € </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('part eso')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Sign up </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme-l2">
+          <p class = "w3-xlarge"> secondary ed. group </p>
+        </li>
+               <li class = "w3-padding-16"> <b> </b> Face-to-face or telematics </li>
+        <li class = "w3-padding-16"> <b> 4 </b> maximum students in class </li>
+        <li class = "w3-padding-16"> <b> </b> If you are in person, you will be at Calle Fernando Poo 41, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> secondary education </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 10 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('grup eso')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Sign up </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme">
+          <p class = "w3-xlarge"> High School private</p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or telematics </li>
+        <li class = "w3-padding-16"> <b> 1 </b> only student in class </li>
+        <li class = "w3-padding-16"> <b> </b> If you are in person, you will be at Calle Fernando Poo 41, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> High School </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 25 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('part batx')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Join </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme-l2">
+          <p class = "w3-xlarge"> High School group </p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or telematics </li>
+        <li class = "w3-padding-16"> <b> 4 </b> maximum students in class </li>
+        <li class = "w3-padding-16"> <b> </b> If you are in person, you will be at Calle Fernando Poo 41, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> High School </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 15 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('grup batx')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Sign up </button>
+        </li>
+      </ul>
+    </div>
+    
+     <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme">
+          <p class = "w3-xlarge"> University private </p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or telematics </li>
+        <li class = "w3-padding-16"> <b> 1 </b> only student in class </li>
+        <li class = "w3-padding-16"> <b> </b> If you are in person, you will be at Calle Fernando Poo 41, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> University </b> math class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 25 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('part uni')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Join </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme-l2">
+          <p class = "w3-xlarge"> University group </p>
+        </li>
+               <li class = "w3-padding-16"> <b> </b> Face-to-face or telematics </li>
+        <li class = "w3-padding-16"> <b> 4 </b> maximum students in class </li>
+        <li class = "w3-padding-16"> <b> </b> If you are in person, you will be at Calle Fernando Poo 41, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> University </b> math class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 15 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "target ('grup uni')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Sign up </button>
+        </li>
+      </ul>
+    </div>
+    
+    
+</div>
+
+<!--<! - Contact Container ->-->
+<div class = "w3-container w3-padding-64 w3-theme-l5" id = "contact">
+  <div class = "w3-row">
+    <div class = "w3-col m5">
+    <div class = "w3-padding-16"> <span class = "w3-xlarge w3-border-teal w3-bottombar"> Contact us </span> </div>
+      <h3> Address </h3>
+      <p> Call us, send us a WhatsApp or come to have some tea and talk about whatever you want. </p>
+      <p> <i class = "fa fa-map-marker w3-text-teal w3-xlarge"> </i>&nbsp;&nbsp; Barcelona, ​​Spain </p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+34 611 648 478</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;newmathematicalschool@gmail.com</p>
+    </div>
+    <div class = "w3-col m7">
+      <form id = "form" class = "w3-container w3-card-4 w3-padding-16 w3-white" action = "sendform.php" target = "_blank" method = "post">
+      <div class = "w3-section">
+        <label> Name </label>
+        <input class = "w3-input" type = "text" name = "name" required placeholder = "Joana Fèlix">
+      </div>
+      <div class = "w3-section">   
+        <label> Email </label>
+        <input class = "w3-input" type = "text" name = "email" required placeholder = "joanamiquel@gmail.com">
+      </div>
+          <div class = "w3-section">
+        <label> Phone </label>
+        <input class = "w3-input" type = "text" name = "phone" required placeholder = "643 633 632">
+      </div>
+      <div class = "w3-section">
+        <label> Message </label>
+        <textarea rows = "4" cols = "60" class = "w3-input" name = "message" required>
+         </textarea>
+      </div>
+      <input class = "w3-check" type = "checkbox" checked name = "Like">
+      <label> I like it! </label>
+      <button type = "submit" name = "submit" class = "w3-button w3-right w3-theme"> Submit </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--<! - Image of location / map ->-->
+<img src = "w3images/sat_fernandpoo.png" class = "w3-image w3-greyscale-min" style = "width: 100%;">
+
+<!--<! - Footer ->-->
+<footer class = "w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4> Follow us </h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"> <i class = "fa fa-facebook-official"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"> <i class = "fa fa-google"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"> <i class = "fa fa-instagram"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Linkedin"> <i class = "fa fa-linkedin"> </i> </a>
+ <p> Created by <a href="http://romamasana.top" target="_blank"> Romà </a> </p>
+  <div style="position:relative;bottom:10px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal">Go to top</span>   
+    <a class="w3-button w3-theme-arrow" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
