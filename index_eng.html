@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ca">
+<title>Math School</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/x-icon" href="/w3images/favicon.png">
+<link rel="stylesheet" href="w3css/4/w3.css">
+<link rel="stylesheet" href="lib/w3-theme-black.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="w3css/font-awesome.min.css">
+<link rel="stylesheet" href="w3css/4/fonts.css">
+<!--adding MATH jax for tex writing-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Global site tag (gtag.js) - Google Ads: 10810008082 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10810008082"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10810008082');
+</script>
+<script>
+    function apuntar(clase) {
+        missatge = document.getElementsByName("message")[0];
+        if(clase =="part eso") {
+            missatge.value = "Hello, I would like to sign up for a private secondary education level math class.";
+        } else if (clase == "grup eso") {
+            missatge.value = "Hello, I would like to sign up for a secondary education level group math class.";
+        } else if (clase == "part batx") {
+            missatge.value = "Hello, I would like to enroll in a high school level particular math class.";
+        } else if (clase == "grup batx") {
+            missatge.value = "Hello, I would like to sign up for a high school level group math class.";
+        } else if (clase == "part uni") {
+            missatge.value = "Hello, I would like to enroll in a private University-level math class.";
+        } else if (clase == "grup uni") {
+            missatge.value = "Hello, I would like to sign up for a University level group math class.";
+        }
+        
+        location.href = "#form"; 
+    }
+</script>
+
+<style>
+body {font-family: Pier}
+</style>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+<a href="#" class="w3-bar-item w3-button"> More services available </a>
+  <a href="#" class="w3-bar-item w3-button"> Exam Preparation </a>
+  <a href="#" class="w3-bar-item w3-button"> Data analysis </a>
+  <a href="#" class="w3-bar-item w3-button"> Math Games </a>
+  <a href="#" class="w3-bar-item w3-button"> A coffee with us </a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align  w3-hide-small">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button w3-teal  w3-hide-small">
+      <i class="fa fa-home w3-margin-right"></i>NEM </a>
+    <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Classes <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#filosofia" class="w3-bar-item w3-button"> Idea </a>
+        <a href="#eso" class="w3-bar-item w3-button"> Secondary Education </a>
+        <a href="#batx" class="w3-bar-item w3-button"> High School </a>
+        <a href="#univ" class="w3-bar-item w3-button"> University </a>
+
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Pricing <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#preueso" class="w3-bar-item w3-button"> Secondary Education </a>
+        <a href="#preubatx" class="w3-bar-item w3-button"> High School </a>
+        <a href="#preuniv" class="w3-bar-item w3-button"> University </a>
+      </div>
+    </div>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Projects <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#plansp" class="w3-bar-item w3-button"> Projective planes </a>
+        <a href="#hpind" class="w3-bar-item w3-button"> HRL Inequality </a>
+        <a href="#other" class="w3-bar-item w3-button"> Others </a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">ENG <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="index.html" class="w3-bar-item w3-button">Català</a>
+        <a href="index_esp.html" class="w3-bar-item w3-button">Español</a>
+        <a href="index_eng.html" class="w3-bar-item w3-button">English</a>
+      </div>
+    </div>
+    <a href="tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search">
+      <i class="fa fa-google-small"></i>
+    </a>
+  </div>
+  <!-- Navbar on small screens -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align  w3-hide-large w3-hide-medium">
+      <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a href="#" class="w3-bar-item w3-button w3-teal">
+          <i class="fa fa-home w3-margin-right"></i>NEM </a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button" title="Notifications">browse <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="#team" class="w3-bar-item w3-button "> Team </a>
+            <a href="#filosofia" class="w3-bar-item w3-button "> Classes </a>
+            <a href="#plansp" class="w3-bar-item w3-button "> Projects </a>
+            <a href="#pricing" class="w3-bar-item w3-button "> Prices </a>
+            <a href="#contact" class="w3-bar-item w3-button "> Contact </a>
+          </div>
+            
+        </div>
+          <div class="w3-dropdown-hover ">
+              <button class="w3-button" title="Notifications">ENG <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="index.html" class="w3-bar-item w3-button">Català</a>
+                <a href="index_esp.html" class="w3-bar-item w3-button">Español</a>
+                <a href="index_eng.html" class="w3-bar-item w3-button">English</a>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="w3images/tibidabo_3.jpg" alt="tibidabo" class="w3-hide-small" style="width:100%;">
+  <img src="w3images/tibidabo_4.jpg" alt="tibidabo" class="w3-hide-large w3-hide-medium" style="width:100%;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='inline'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Nova Escola Matemàtica</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4> Want to learn math? </h4>
+      <h5> Sign up for our classes <i class = "fa fa-smile-o"> </i> </h5>
+    </header>
+    <div class = "w3-container">
+      <p> Mathematics (and other subjects) should be explained differently. </p>
+      <p> See the rest of our website for more! </p>
+    </div>
+    <footer class="w3-container w3-teal">
+<p> Guide instead of instructing </p>    </footer>
+  </div>
+</div>
+
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="filosofia">
+
+<div class="w3-half">
+<h2> Teaching Perspective </h2>
+<p> The intention of the New School of Mathematics is simple: to give the minimum of instructions to the student so that she is the one who finds the way. We do not want to be a traditional school where the student first listens, and then repeats specific exercises. </p>
+</div>
+<div class = "w3-half">
+<h4> We want to do it the other way around: </h4>
+<p> We want to listen to the student first, what problem she wants to solve. Then we ask what ideas he has and from there we encourage him to explore those that we as teachers or guides
+we know they can fix the problem. The intention is for the student to work and think for herself, and is not limited to copying and repeating mechanically as is currently the case in almost all
+schools of Catalonia. </p>
+</div>
+    <div class="w3-half">
+        <ul>
+            <li> <h4 id = "eso" class = "w3-text-amber"> Secondary Classes (ESO) </h4> <p> Understand the following content,
+                    in general: </p>
+                <p> <b> math </b> </p>
+                <ul>
+                    <li> Sense of number and operations </li>
+                    <li> Language and algebraic calculus </li>
+                    <li> Patterns, relationships, and functions </li>
+                    <li> Change analysis and function types </li>
+                    <li> Spatial sense and representation of three-dimensional figures </li>
+                    <li> Metric relations and calculation of measures in figures </li>
+                    <li> Statistics </li>
+                    <li> Measurement and probability </li>
+                </ul>
+                <p> <b> Physics and Chemistry </b> </p>
+                <ul>
+                    
+                    <li> Mechanical and electromagnetic wave model. Light ray model. </li>
+                    <li> Chemical change model. </li>
+                    <li> Atomic-molecular model, chemical bond, intermolecular forces. Model structure of substances. </li>
+                    <li> Energy, forces and movements </li>
+                    <li> Measurement and probability </li>
+                    <li> Industrial technological systems. Simple and complex machines </li>
+                    <li> Technological objects based on mechanics, electricity, electronics and pneumatics </li>
+                    <li> Electric current and effects. Electricity generation. </li>
+                    
+                </ul>
+            </li>
+            <li> <h4 id = "batx" class = "w3-text-amber"> High School Classes </h4>
+                <p> Includes the following content,
+                    in general: </p>
+                <p> <b> math </b> </p>
+                <ul>
+                    <li> Arithmetic and algebra <span class = "w3-text-light-gray"> (number theory, decimals, polynomials, progressions) </span> </li>
+                    <li> Geometry <span class = "w3-text-light-gray"> (circle, trigonometry, vectors) </span> </li>
+                    <li> Analysis <span class = "w3-text-light-gray"> (functions, exchange rates, derivatives) </span> </li>
+                    <li> Statistics <span class = "w3-text-light-gray"> (probability, relationships between variables, combinations) </span> </li>
+
+                </ul>
+                <p> <b> physics </b> </p>
+                <ul>
+                    <li> Images <span class = "w3-text-light-gray"> (light ray model, light behavior, light spectrum, polarization) </span> </li>
+                    <li> Motion <span class = "w3-text-light-gray"> (Cartesian plane, uniform motion, uniform circular, parabola) </span> </li>
+                    <li> Mechanics <span class = "w3-text-light-gray"> (Force, friction, tension, ppi action Newton's reaction, vector system, shocks, conservation of momentum) </span> </li >
+                    <li> Energy <span class = "w3-text-light-gray"> (work and heat, transfer, in. kinetics, gravitational potential, transformation, measurement, power, dissipation) </span> </li>
+                    <li> Electricity <span class = "w3-text-light-gray"> (direct / alternating current, current, potential, resistance, Ohm's law, transferred power, electromotive force,
+                            series or parallel resistors, electrical circuit, sensors) </span> </li>
+
+                </ul>
+                <p> <b> chemistry </b> </p>
+                <ul>
+                    <li> atomic-molecular models <span class = "w3-text-light-gray"> (molecular structure, Lavoisier nomenclature and formulation, atomic and molecular mass, mol, Avogadro's constant,
+                            periodic table) </span> </li>
+                    <li> Gases and liquids <span class = "w3-text-light-gray"> (diff. between fact, hypothesis, experiment and law, pressure-volume relationship, temperature, gas kinematics, surface tension, solutions,
+                            partial pressure) </span> </li>
+                    <li> Bohr atomic model <span class = "w3-text-light-gray"> (subatomic particles, atomic number, light wave-particle duality, Schrödinger model) </span> </li>
+                    <li> bonds <span class = "w3-text-light-gray"> (Lewis atomic model, covalent bond, molecular bond, atomic bond, intra-molecular forces,
+                            dipole-dipole forces, hydrogen bonding, crystals) </span> </li>
+                    <li> organic chemistry <span class = "w3-text-light-gray"> (properties, isomers, formulation and nomenclature, good fuel, biofuels,
+                            drug synthesis) </span> </li>
+                    <li> chemical reactions <span class = "w3-text-light-gray"> (molecular interaction, acids and bases, pH, precipitation, redox, polymers,
+                            oxidation) </span> </li>
+
+                </ul>
+                
+                
+                
+                </li>
+        </ul>
+</div>
+    
+<!--    <div class="w3-half">
+        <ul>
+            
+        </ul>
+        </div>-->
+    
+         <div class="w3-half">
+        <ul>                     
+            <li> <h4 id = "univ" class = "w3-text-amber"> University Classes </h4>
+                <p> Any topic related to </p>
+                <p> <b> math </b>: </p>
+            <ul>
+                    <li> Practical algebra <span class = "w3-text-light-gray"> (number theory, bases, polynomials, progressions) </span> </li>
+                    <li> Advanced algebra <span class = "w3-text-light-gray"> (Matrix diagonalization, characteristic polynomial, projections, orthonormal bases) </span> </li>
+                    <li> Euclidean geometry <span class = "w3-text-light-gray"> (Cartesian coordinates, vectors, calculation of distances between planes and lines,
+                            base changes, base change matrices, dual space) </span> </li>
+                    <li> Affine Geometry <span class = "w3-text-light-gray"> (parallel lines, axioms, Pappus's law, Discharges, affine transformation, affine space, projective) </span> </li>
+                    <li> Calculating functions <span class = "w3-text-light-gray"> (functions, exchange rates, derivatives, tangents) </span> </li>
+                    <li> Integral calculus <span class = "w3-text-light-gray"> (simple and complex integrals, in 1D, in 2D, in 3D) </span> </li>
+                    <li> Pure calculus <span class = "w3-text-light-gray"> (lim sup, lim inf, def in epsilon delta, fundamental calculus theorem) </span> </li>
+
+                    <li> Practical probability <span class = "w3-text-light-gray"> (measure, Newton's binomial, random variable, combinatorial) </span> </li>
+                    <li> Pure probability <span class = "w3-text-light-gray"> (measure theory, probability space, independent / dependent random variables, Lebesgue measure, Fatou lemma, theorem
+                            of the Lebesgue-dominated convergence) </span> </li>
+                            
+                    <li> Function distribution statistics <span class = "w3-text-light-gray"> (probability distributions, Gaussian distribution, Poisson, Dirach,
+                            uniform, logistics, beta, gamma, exponential, Cauchy) </span> </li>
+                    <li> Prediction and hypothesis statistics <span class = "w3-text-light-gray"> (hypothesis tests, linear regression, adjusted values,
+                            error distribution as a random variable, error measurement, likelihood, parametric and nonparametric regressions) </span> </li>
+                    <li> 1-variable differential equations <span class = "w3-text-light-gray"> (linear, homogeneous, constant / variable coefficients, first-order linear ED,
+                            flow charts, source points and well points, vector field, trajectory approx. of particles) </span> </li>
+                    <li> Computational algebra <span class = "w3-text-light-gray"> (QR factorization, fact. LU, decomposition into eigenvalues, Gaussian method, solution of linear systems,
+                            conditioning and stability of a problem, stability of an algorithm, iterative methods) </span> </li>
+                    
+                </ul>
+            
+            </li>
+        </ul>
+        
+    </div>
+</div>
+
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2> OUR TEAM </h2>
+<p> Meet the team - the field workers: </p>
+
+<div class="w3-row"><br>
+
+<div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/roma.jpg" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/roma.jpg" alt="Boss" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Romà Masana</h3>
+  <p class = "w3-text-aqua"> Web Designer and Marketing. </p>
+    <ul>
+      <li> Responsible for designing the entire Front-End and Back-end </li>
+      <li> Aesthetic design of all school materials, choose typography and colors. </li>
+      <li> Select the photographs and drawings that appear throughout the material </li>
+  </ul> 
+
+  </div>
+  </div>
+    
+</div>
+    
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/roma.jpg" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/roma.jpg" alt="Boss" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Romà Masana</h3>
+  <p class = "w3-text-aqua"> 24/7 support. </p>
+  <p> Answer emails, messages, and calls. </p>
+  </div>
+  </div>
+    
+</div>
+    </div>
+    
+    <div class="w3-row"><br>
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/roma.jpg" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/roma.jpg" alt="Boss" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Romà Masana</h3>
+  <p class = "w3-text-aqua"> Chief. </p>
+  <ul>
+      <li> Has responsibility for managing all work </li>
+      <li> Make pricing decisions </li>
+      <li> How to advertise
+  and what kind of audience is sought </li>
+      <li> He is ultimately responsible for whether the school is going well or badly. </li>
+  </ul> 
+  </div>
+  </div>
+    
+</div>
+    
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/roma.jpg" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/roma.jpg" alt="Boss" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <p class = "w3-text-aqua"> Teacher </p>
+  <ul>
+      <li> Graduated in mathematics at the UPC Barcelona, ​​degree thesis on the Schrödinger equation in the hydrogen atom. Study in partial derivatives. </li>
+  <li> Master's degree in mathematics from the Nijmegen Universiteit (Netherlands). Master's thesis: the calibration of a physical model of wind prediction using statistics. Specifically, nonparametric regression methods and machine learning. </li>
+  <li> PhD in mathematics at the IIT in Chicago, USA (unfinished). Focused on Bayesian methods of statistics and probability theory. </li>
+  <li> 1 year of experience working as a Data Scientist in a Health Economics consultancy </li>
+  <li><a  target="_blank" href="https://www.linkedin.com/in/rom%C3%A0-masana-61459411b">Linkedin</a></li>
+
+
+  </ul>
+  </div>
+  </div>
+    
+</div>
+
+
+</div>
+
+<div class="w3-row"><br>
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/shabnam.jfif" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/shabnam.jfif" alt="Boss" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Shabnam Morakba</h3>
+  <p class="w3-text-aqua">Teacher </p>
+  <ul>
+      <li>My name is Shabnam, I graduated from the Polytechnic University of Catalonia
+          with a Ph.D. in Chemical Engineering. Since 2015 I live and work in
+          Barcelona as an educator. I give private classes in a wide range
+          of academic subjects focused on mathematics, chemistry and physics by
+          ESO and High School. I have been teaching in public high schools
+          and international in Barcelona. As a private tutor, I am very patient and
+          I believe in positive reinforcement. I like to establish a great relationship with
+          a student from the beginning, which helps to personalize the plan
+          studies to work with the strengths and weaknesses of the student.
+          I am a good student, I love mathematics and I am passionate about history,
+          Literature. "Science knows no country, because knowledge
+          belongs to humanity, and is the torch that illuminates the world.”
+          Louis Pasteur</li>
+      <li><a  target="_blank" href="https://www.linkedin.com/in/shabnam-morakabatchiankar-a7792260/">Linkedin</a></li>
+      
+  </ul> 
+  </div>
+  </div>
+    
+</div>
+    
+    <div class="w3-half">
+    
+<div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/careeng.jfif" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/careeng.jfif" alt="Boss" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+      <h3>Ca'reen Govindasamy</h3>
+  <p class="w3-text-aqua">Teacher</p>
+  <ul>
+      <li>Graduated in Mathematics and Computer Science from the University of South Africa.
+      Expert in the subject of mathematics and computing and specifically, in
+      Igcse Cambridge exams - Mathematics, Physics, Chemistry and Biology.
+      I can also teach Python and other languages ​​with no problem.</li>
+  <li><a  target="_blank" href="https://www.linkedin.com/in/ca-reen-govindasamy-1510a8138/">Linkedin</a></li>
+
+
+  </ul>
+  </div>
+  </div>
+    
+   
+        
+</div>
+
+
+</div>
+
+
+
+<div class="w3-row"><br>
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/emptywoman.png" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/emptywoman.png" alt="Boss" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Marta Galló</h3>
+  <p class="w3-text-aqua">Teacher </p>
+  <ul>
+      <li>I am currently studying Social Work at the University
+      from Barcelona. I have a great passion for languages ​​and philology and I feel
+      expert in this field. I am an elite athlete and I teach Catalan language,
+      Spanish and English.</li>
+            <li><a  target="_blank" href="https://www.linkedin.com/in/marta-gall%C3%B3-3a6a42236">Linkedin</a></li>
+
+  </ul> 
+  </div>
+  </div>
+    
+</div>
+    
+    <div class="w3-half">
+    
+<div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/laibai.jfif" alt="Boss" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/laibai.jfif" alt="Boss" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+      <h3>Laiba Iqbal</h3>
+  <p class="w3-text-aqua">Teacher</p>
+  <ul>
+      <li>I am a Physics student at the University of Barcelona. I have
+      experience teaching physics and mathematics in ESO and high school.</li>
+  <li><a  target="_blank" href="https://www.linkedin.com/in/laiba-iqbal-kousar-b87317233/">Linkedin</a></li>
+
+
+  </ul>
+  </div>
+  </div>
+    
+   
+        
+</div>
+
+
+</div>
+
+
+
+<div class="w3-row"><br>
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/miquelvillalonga.jfif" alt="mestre" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/miquelvillalonga.jfif" alt="mestre" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Miquel Villalonga</h3>
+  <p class="w3-text-aqua">Teacher </p>
+  <ul>
+      <li> I graduated in the double degree of Mathematics and Administration and Management
+          of Companies by the University of Barcelona. I have experience in giving
+          private classes in ESO, Baccalaureate and first courses of University,
+          especially Mathematics but also other subjects such as Economics,
+          Accounting, Physics and Chemistry. As a teacher, I like to explain
+          the doubts that my students ask me so that they do not
+          limit themselves to solving the exercises mechanically. I also like to
+          establish a close and trusting relationship with the student, and since as far 
+          as I can remember I have always loved the world of mathematics and teaching.</li>
+      <li><a target="_blank"  href="https://www.linkedin.com/in/miquel-villalonga-su%C3%B1er-bb03131a3">
+              Linkedin</a></li>
+  </ul> 
+  </div>
+  </div>
+    
+</div>
+    
+    <div class="w3-half">
+    
+<div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/albatacher.jfif" alt="mestra" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/albatacher.jfif" alt="mestra" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+      <h3>Alba Tacoronte</h3>
+  <p class="w3-text-aqua">Teacher</p>
+  <ul>
+      <li>I graduated in Physics from the University of Seville. I have discovered a real
+          passion for mathematics and how to teach it. I have stayed in the
+          Gdańsk University of Poland. I have worked as a programmer in a
+          bank and currently I have decided to focus my career as a teacher in the
+          Polytechnic University of Catalonia as a Calculus professor for students of
+          Telecommunications.</li>
+  <li><a target="_blank" href="https://www.linkedin.com/in/albtacher">Linkedin</a></li>
+
+
+  </ul>
+  </div>
+  </div>
+    
+   
+        
+</div>
+
+
+</div>
+
+
+
+<div class="w3-row"><br>
+    <div class="w3-half">
+    
+    <div class="w3-row">
+        
+<div class="w3-quarter">
+<img src="w3images/gemarojas.jfif" alt="mestre" style="width:100%" class="w3-hide-small w3-circle w3-hover-opacity">
+  <img src="w3images/gemarojas.jfif" alt="mestre" style="width:40%" class="w3-circle w3-hover-opacity w3-hide-large w3-hide-medium">  </div>
+  <div class="w3-threequarter">
+  <h3>Gema Rojas</h3>
+  <p class="w3-text-aqua">Teacher </p>
+  <ul>
+      <li>My background education is in basic and experimental biomedicine. Then, 
+          I got a master's degree in bioinformatics and I especialised in data 
+          science in the healthcare sector working at a private company. 
+          Currently, I am PhD candidate in biomedicine, with specialisation in 
+          bioinformatics, and I am exploring the use of generative models and 
+          bioactivity descriptors for the repurposing and discovery of drugs.</li>
+      <li><a target="_blank"  href="https://www.linkedin.com/in/gema-rojas-granado">
+              Linkedin</a></li>
+  </ul> 
+  </div>
+  </div>
+    
+</div>
+    
+    <div class="w3-half">
+    
+<div class="w3-row">
+        
+
+  </div>
+    
+   
+        
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+    <h4 class="w3-text-amber">Current projects </h4>
+<div class="w3-third" id="plansp">
+    <br>
+<div class="w3-card w3-white">
+  <img src="w3images/congostmr.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container" >
+ <h3> Projective planes </h3>
+  <h4> <b> Math </b> Research </h4>
+  <p> Current project of one of our teachers </p>
+  <p> The goal is to solve a kind of puzzle with 157 points and 157 lines of
+  so that every two lines intersect at exactly one point. </p>
+  <p> This puzzle remains unsolved for any math in the world today. </p>
+  </div>
+  </div>
+</div>
+    
+
+<div class="w3-third" id="hpind">
+      <br>
+<div class="w3-card w3-white">
+    
+  <img src="w3images/basil.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container" >
+ <h3> Inequality induction hypothesis </h3>
+  <h4> <b> Math </b> Research </h4>
+  <p> One of the current projects </p>
+  <p> A teacher is studying the whole mathematical theory of induction hypotheses in a linear regression
+  and has discovered that the theory would be almost the same when the hypothesis is not an equation of the type 
+  \[H_0: H \ beta = c \]
+  Otherwise this aspect: 
+  \[H_0: H \ beta \ leq c \]
+  </p>
+  </div>
+  </div>
+</div>
+    
+    <div class="w3-third" id="other">
+          <br>
+<div class="w3-card w3-white">
+    
+  <img src="w3images/volley.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container" >  
+  <h3> Other projects </h3>
+  <h4> Include </h4>
+  <ul>
+      <li> <b> Wind speed forecast </b> at 3700 weather stations in Europe, using the physical model
+      of the European Meteorological Institute ECMWF. Finished project. Statistical adjustment of the model prediction has been made
+      using ML's Random Forests technique, and advanced regression models called R.'s GAMLSS </li>
+      <li> The study of the Neiderreiter random number generator function used in <b> cryptology </b>. </li>
+      <li> The creation of a Random Forests model (machine learning) that maintains efficiency and is simpler, based on the idea of ​​using multiple variables to make each
+      branching. </li>
+      <li> Establish appropriate symbology to promote <b> hexadecimal </b> writing instead of the current less effective decimal system. </li>
+  </ul>
+  </div>
+  </div>
+</div>
+
+    
+    
+
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+   <h2> Prices </h2>
+    <p> We give private, group, face-to-face and telematic classes. The price is 1 hour per session. </p> <br>
+    <div class = "w3-half w3-margin-bottom" id = "preueso">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme">
+          <p class = "w3-xlarge"> Particular ESO </p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or online </li>
+        <li class = "w3-padding-16"> <b> 1 </b> sol student in class </li>
+        <li class = "w3-padding-16"> <b> </b> If presential, it will be at Sagrada Familia,
+            Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> ESO </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 18 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('part eso')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa fa-check"> </i> Sign up </button >
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme-l2">
+          <p class = "w3-xlarge"> In ESO group </p>
+        </li>
+               <li class = "w3-padding-16"> <b> </b> Face-to-face or online </li>
+        <li class = "w3-padding-16"> <b> 4 </b> students maximum in class </li>
+        <li class = "w3-padding-16"> <b> </b> If presential, it will be at Sagrada Familia, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> ESO </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 10 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button onclick="apuntar('grup eso')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half w3-margin-bottom" id="preubatx">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class = "w3-xlarge"> Private high school </p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or online </li>
+        <li class = "w3-padding-16"> <b> 1 </b> sol student in class </li>
+        <li class = "w3-padding-16"> <b> </b> If presential, it will be at Sagrada Familia, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> high school </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 20 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('part batx')" class = "w3-button w3-teal w3-padding-large"> <i class = "do fa-check"> </i> Sign up </button >
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme-l2">
+          <p class = "w3-xlarge"> In high school group </p>
+        </li>
+               <li class = "w3-padding-16"> <b> </b> Face-to-face or online </li>
+        <li class = "w3-padding-16"> <b> 4 </b> students maximum in class </li>
+        <li class = "w3-padding-16"> <b> </b> If presential, it will be at Sagrada Familia, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> high school </b> math or physics class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 15 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('grup batx')" class = "w3-button w3-teal w3-padding-large"> <i class = "do fa-check"> </i> Sign up </button >
+        </li>
+      </ul>
+    </div><div class = "w3-half w3-margin-bottom" id = "preuniv">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme">
+          <p class = "w3-xlarge"> Private University </p>
+        </li>
+        <li class = "w3-padding-16"> <b> </b> Face-to-face or online </li>
+        <li class = "w3-padding-16"> <b> 1 </b> sol student in class </li>
+        <li class = "w3-padding-16"> <b> </b> If presential, it will be at Sagrada 
+            Familia 08013, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> University </b> math class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 25 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick = "apuntar('part uni')" class = "w3-button w3-teal w3-padding-large"> <i class = "fa-check"> </i> Sign up </button >
+        </li>
+      </ul>
+    </div>
+
+    <div class = "w3-half w3-margin-bottom">
+      <ul class = "w3-ul w3-border w3-hover-shadow">
+        <li class = "w3-theme-l2">
+          <p class = "w3-xlarge"> In University group </p>
+        </li>
+               <li class = "w3-padding-16"> <b> </b> Face-to-face or online </li>
+        <li class = "w3-padding-16"> <b> 4 </b> students maximum in class </li>
+        <li class = "w3-padding-16"> <b> </b> If presential, it will be at Sagrada Familia, Barcelona </li>
+        <li class = "w3-padding-16"> <b> 1h </b> of class </li>
+        <li class = "w3-padding-16"> <b> University </b> math class </li>
+        <li class = "w3-padding-16">
+          <h2 class = "w3-wide"> € 18 </h2>
+          <span class = "w3-opacity"> per class </span>
+        </li>
+        <li class = "w3-theme-l5 w3-padding-24">
+          <button onclick="apuntar('uni grup')" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign up</button>
+        </li>
+      </ul>
+    </div>
+    
+    
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class = "w3-padding-16"> <span class = "w3-xlarge w3-border-teal w3-bottombar"> Contact Us </span> </div>
+      <h3> Address </h3>
+      <p> Call us, send us a Whatsapp or come and have a cup of tea and talk about whatever you want. </p>
+      <p> <i class = "fa fa-map-marker w3-text-teal w3-xlarge"> </i> &nbsp; &nbsp; Barcelona, ​​Spain </p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+34 611 648 478</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;newmathematicalschool@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form id="form" class="w3-container w3-card-4 w3-padding-16 w3-white" action="sendform.php" target="_blank" method="post">
+      <div class="w3-section">      
+        <label> Name </label>
+        <input class = "w3-input" type = "text" name = "name" required placeholder = "Joana Fèlix">
+      </div>
+      <div class = "w3-section">
+        <label> Email </label>
+        <input class = "w3-input" type = "text" name = "email" required placeholder = "joanamiquel@gmail.com">
+      </div>
+          <div class = "w3-section">
+        <label> Phone </label>
+        <input class = "w3-input" type = "text" name = "phone" required placeholder = "643 633 632">
+      </div>
+      <div class = "w3-section">
+        <label> Message </label>
+        <textarea rows = "4" cols = "60" class = "w3-input" name = "message" required>
+         </textarea>
+      </div>
+      <input class = "w3-check" type = "checkbox" checked name = "Like">
+      <label> I like it! </label>
+      <button type="submit" name="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="w3images/sat_fernandpoo.png" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+ <h4> Follow us </h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"> <i class = "fa fa-facebook-official"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"> <i class = "fa-google"> </i> </a> 
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"> <i class = "fa-instagram"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Linkedin"> <i class = "fa fa-linkedin"> </i> </a>
+  <p> Created by <a href="http://romamasana.top" target="_blank"> Romà </a> </p>
+
+  <div style = "position: relative; bottom: 10px; z-index: 1;" class = "w3-tooltip w3-right">
+    <span class = "w3-text w3-padding w3-teal"> Go to top </span>  
+    <a class="w3-button w3-theme-arrow" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

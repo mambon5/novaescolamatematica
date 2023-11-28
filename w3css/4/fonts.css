@@ -1,0 +1,73 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: Amatic;
+  src: url(../../fonts/AmaticSC-Regular.ttf)
+}
+
+
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-Light.otf);
+    font-style: medium;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-MediumItalic.otf);
+    font-weight: medium;
+    font-style: italic;
+}
+@font-face {
+  font-family: Pier;
+  src: url(../../fonts/PierSans-Regular.otf);
+  font-style:regular;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-Black.otf);
+    font-weight: black;
+    
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-BlackItalic.otf);
+    font-weight: black;
+    font-style: italic;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-BoldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-Italic.otf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-Light.otf);
+    font-style: light;
+}
+@font-face {
+    font-family: Pier;
+    src: url(../../fonts/PierSans-LightItalic.otf);
+    font-weight: light;
+    font-style: italic;
+}
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Medium.ttf)
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../../fonts/OpenSans-Regular.ttf)
+}
