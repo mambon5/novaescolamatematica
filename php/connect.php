@@ -5,14 +5,14 @@ $password = "";
 $database = "";
 
 $host =  gethostname();
-$findme   = '000webhost';
+$findme   = 'ddns';
 $webhost = strpos($host, $findme);
 
 if($webhost) { //working on 000webhost
-    $servername = "localhost";
-    $username = "id17956688_roma";      
-    $password = "N^We_?4QtnVu+)!O";              
-    $database = "id17956688_dadesnem";
+    $servername = "insegur.ddns.net ";
+    $username = "escolamat";      
+    $password = "uasdfhLLAD=90-2";              
+    $database = "nescolamatem";
 }
 else { // I bet working on my local computer
     $servername = "localhost";
