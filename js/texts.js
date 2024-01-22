@@ -234,7 +234,7 @@ dicc["cat"] = {
         subt: "Truca'ns, envia'ns un Whatsapp o vine't per fer un té i parlar del que vulguis.",
         loc: "Barcelona, Espanya",
         telf: "+34 611 648 478",
-        email: "newmathematicalschool@gmail.com",
+        email: "contact@nescolam.com",
         form: {
             nomz: "Nom",
             email: "Email",
@@ -483,7 +483,7 @@ dicc["esp"] = {
         subt: "Llámanos, envíanos un Whatsapp o vente para hacer un té y hablar de lo que quieras.",
         loc: "Barcelona, ​​España",
         telf: "+34 611 648 478",
-        email: "newmathematicalschool@gmail.com",
+        email: "contact@nescolam.com",
         form: {
             nomz: "Nombre",
             email: "Email",
@@ -742,13 +742,13 @@ dicc["eng"] = {
         subt: "Call us, send us a Whatsapp or come for a cup of tea and talk about whatever you want.",
         loc: "Barcelona, ​​Spain",
         telf: "+34 611 648 478",
-        email: "newmathematicalschool@gmail.com",
+        email: "contact@nescolam.com",
         form: {
             nomz: "Name",
             email: "Email",
             telf: "Phone",
             mesg: "Message",
-            rtick: "I like!",
+            rtick: "Like!",
             env: "Send"
         }
     },
