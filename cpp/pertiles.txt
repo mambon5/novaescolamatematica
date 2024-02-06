@@ -93,7 +93,7 @@ last close value percentile: 74
 
 #### BTC-EUR: 
 Fecha actual: 2024-02-06
-last close value percentile: 96
+last close value percentile: 97
 
 #### ADA-EUR: 
 Fecha actual: 2024-02-06
