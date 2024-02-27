@@ -1,0 +1,65 @@
+initial date: 2023-01-01
+Fecha actual: 2024-02-27
+Quantitat de dies entre les dues dates: 422
+
+#### ^IXIC: 
+Quantitat de valors: 288
+last close value percentile: 99
+Pendiente (slope): 0.313118
+
+#### ^GSPC: 
+Quantitat de valors: 288
+last close value percentile: 99
+Pendiente (slope): 0.307998
+
+#### ^DJI: 
+Quantitat de valors: 288
+last close value percentile: 99
+Pendiente (slope): 0.248436
+
+#### META: 
+Quantitat de valors: 288
+last close value percentile: 99
+Pendiente (slope): 0.33828
+
+#### TSLA: 
+Quantitat de valors: 288
+last close value percentile: 38
+Pendiente (slope): 0.153626
+
+#### HPE: 
+Quantitat de valors: 288
+last close value percentile: 14
+Pendiente (slope): 0.0534964
+
+#### PSX: 
+Quantitat de valors: 288
+last close value percentile: 100
+Pendiente (slope): 0.280047
+
+#### SU.PA: 
+Quantitat de valors: 295
+last close value percentile: 100
+Pendiente (slope): 0.237722
+
+#### RIOT: 
+Quantitat de valors: 288
+last close value percentile: 92
+Pendiente (slope): 0.195577
+
+#### GOOGL: 
+Quantitat de valors: 288
+last close value percentile: 80
+Pendiente (slope): 0.327481
+
+#### GME: 
+Quantitat de valors: 288
+last close value percentile: 10
+Pendiente (slope): -0.230035
+
+#### INTC: 
+Quantitat de valors: 288
+last close value percentile: 81
+Pendiente (slope): 0.323002
+
+#### IBM: 
