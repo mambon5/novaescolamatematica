@@ -1,65 +1,123 @@
 initial date: 2023-01-01
-Fecha actual: 2024-02-27
-Quantitat de dies entre les dues dates: 422
+Fecha actual: 2024-04-15
+Quantitat de dies entre les dues dates: 470
 
 #### ^IXIC: 
-Quantitat de valors: 288
-last close value percentile: 99
-Pendiente (slope): 0.313118
+last close value percentile: 94
+Pendiente (slope): 0.289
 
 #### ^GSPC: 
-Quantitat de valors: 288
-last close value percentile: 99
-Pendiente (slope): 0.307998
+last close value percentile: 92
+Pendiente (slope): 0.286
 
 #### ^DJI: 
-Quantitat de valors: 288
-last close value percentile: 99
-Pendiente (slope): 0.248436
+last close value percentile: 83
+Pendiente (slope): 0.247
 
 #### META: 
-Quantitat de valors: 288
-last close value percentile: 99
-Pendiente (slope): 0.33828
+last close value percentile: 98
+Pendiente (slope): 0.306
 
 #### TSLA: 
-Quantitat de valors: 288
-last close value percentile: 38
-Pendiente (slope): 0.153626
+last close value percentile: 13
+Pendiente (slope): 0.056
 
 #### HPE: 
-Quantitat de valors: 288
-last close value percentile: 14
-Pendiente (slope): 0.0534964
+last close value percentile: 88
+Pendiente (slope): 0.099
 
 #### PSX: 
-Quantitat de valors: 288
-last close value percentile: 100
-Pendiente (slope): 0.280047
+last close value percentile: 97
+Pendiente (slope): 0.268
 
 #### SU.PA: 
-Quantitat de valors: 295
-last close value percentile: 100
-Pendiente (slope): 0.237722
+last close value percentile: 94
+Pendiente (slope): 0.238
 
 #### RIOT: 
-Quantitat de valors: 288
-last close value percentile: 92
-Pendiente (slope): 0.195577
+last close value percentile: 21
+Pendiente (slope): 0.158
 
 #### GOOGL: 
-Quantitat de valors: 288
-last close value percentile: 80
-Pendiente (slope): 0.327481
+last close value percentile: 99
+Pendiente (slope): 0.293
 
 #### GME: 
-Quantitat de valors: 288
-last close value percentile: 10
-Pendiente (slope): -0.230035
+last close value percentile: 0
+Pendiente (slope): -0.228
 
 #### INTC: 
-Quantitat de valors: 288
-last close value percentile: 81
-Pendiente (slope): 0.323002
+last close value percentile: 56
+Pendiente (slope): 0.283
 
 #### IBM: 
+last close value percentile: 83
+Pendiente (slope): 0.265
+
+#### QCOM: 
+last close value percentile: 97
+Pendiente (slope): 0.157
+
+#### ASML: 
+last close value percentile: 92
+Pendiente (slope): 0.181
+
+#### TSM: 
+last close value percentile: 98
+Pendiente (slope): 0.212
+
+#### NVDA: 
+last close value percentile: 94
+Pendiente (slope): 0.299
+
+#### 005930.KS: 
+last close value percentile: 97
+Pendiente (slope): 0.278
+
+#### NFLX: 
+last close value percentile: 97
+Pendiente (slope): 0.280
+
+#### MSFT: 
+last close value percentile: 96
+Pendiente (slope): 0.292
+
+#### LPL: 
+last close value percentile: 0
+Pendiente (slope): -0.252
+
+#### HLF: 
+last close value percentile: 2
+Pendiente (slope): -0.228
+
+#### AAPL: 
+last close value percentile: 50
+Pendiente (slope): 0.179
+
+#### 0P0000XV9S.BO: 
+last close value percentile: 81
+Pendiente (slope): 0.010
+
+#### BTC-EUR: 
+last close value percentile: 94
+Pendiente (slope): 0.188
+
+#### ADA-EUR: 
+last close value percentile: 75
+Pendiente (slope): 0.096
+
+#### ETH-EUR: 
+last close value percentile: 90
+Pendiente (slope): 0.165
+
+#### EUR=X: 
+last close value percentile: 85
+Pendiente (slope): -0.025
+
+#### GC=F: 
+last close value percentile: 100
+Pendiente (slope): 0.209
+
+#### CL=F: 
+last close value percentile: 89
+Pendiente (slope): 0.063
