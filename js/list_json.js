@@ -24,9 +24,10 @@ function json_to_select(dades,value,display,elem_id) {
     if(elem_id==undefined) elem_id="list";
     //const myObj = JSON.parse(this.responseText); //use if original data in text
     const myObj = dades;
+    const n = myObj.length;
       var text = "<select>"
-      for (var x in myObj) {
-        text += "<option value='"+myObj[x][value]+"'>" + myObj[x][display] + "</option>";
+      for (let i=0; i<n; ++i) {
+        text += "<option value='"+myObj[i][value]+"'>" + myObj[i][display] + "</option>";
       }
       text += "</select>"
       document.getElementById(elem_id).innerHTML = text;
@@ -36,9 +37,10 @@ function json_to_options(dades,value,display,elem_id) {
     if(elem_id==undefined) elem_id="list";
     //const myObj = JSON.parse(this.responseText); //use if original data in text
     const myObj = dades;
+    const n = myObj.length;
       var text = ""
-      for (var x in myObj) {
-        text += "<option value='"+myObj[x][value]+"'>" + myObj[x][display] + "</option>";
+      for (let i=0; i<n; ++i) {
+        text += "<option value='"+myObj[i][value]+"'>" + myObj[i][display] + "</option>";
       }
      
       document.getElementById(elem_id).innerHTML = text;

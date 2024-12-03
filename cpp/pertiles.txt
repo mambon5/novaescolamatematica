@@ -1,123 +1,123 @@
 initial date: 2023-01-01
-Fecha actual: 2024-04-15
-Quantitat de dies entre les dues dates: 470
+Fecha actual: 2024-05-01
+Quantitat de dies entre les dues dates: 486
 
 #### ^IXIC: 
-last close value percentile: 94
-Pendiente (slope): 0.289
+last close value percentile: 85
+Pendiente (slope): 0.280
 
 #### ^GSPC: 
-last close value percentile: 92
-Pendiente (slope): 0.286
+last close value percentile: 87
+Pendiente (slope): 0.277
 
 #### ^DJI: 
-last close value percentile: 83
-Pendiente (slope): 0.247
+last close value percentile: 80
+Pendiente (slope): 0.242
 
 #### META: 
-last close value percentile: 98
-Pendiente (slope): 0.306
+last close value percentile: 82
+Pendiente (slope): 0.294
 
 #### TSLA: 
-last close value percentile: 13
-Pendiente (slope): 0.056
+last close value percentile: 29
+Pendiente (slope): 0.027
 
 #### HPE: 
-last close value percentile: 88
-Pendiente (slope): 0.099
+last close value percentile: 71
+Pendiente (slope): 0.104
 
 #### PSX: 
-last close value percentile: 97
-Pendiente (slope): 0.268
+last close value percentile: 82
+Pendiente (slope): 0.262
 
 #### SU.PA: 
-last close value percentile: 94
-Pendiente (slope): 0.238
+last close value percentile: 97
+Pendiente (slope): 0.236
 
 #### RIOT: 
-last close value percentile: 21
-Pendiente (slope): 0.158
+last close value percentile: 32
+Pendiente (slope): 0.139
 
 #### GOOGL: 
 last close value percentile: 99
-Pendiente (slope): 0.293
+Pendiente (slope): 0.285
 
 #### GME: 
-last close value percentile: 0
+last close value percentile: 4
 Pendiente (slope): -0.228
 
 #### INTC: 
-last close value percentile: 56
-Pendiente (slope): 0.283
+last close value percentile: 25
+Pendiente (slope): 0.256
 
 #### IBM: 
-last close value percentile: 83
-Pendiente (slope): 0.265
+last close value percentile: 78
+Pendiente (slope): 0.258
 
 #### QCOM: 
-last close value percentile: 97
-Pendiente (slope): 0.157
+last close value percentile: 91
+Pendiente (slope): 0.166
 
 #### ASML: 
-last close value percentile: 92
-Pendiente (slope): 0.181
+last close value percentile: 82
+Pendiente (slope): 0.186
 
 #### TSM: 
-last close value percentile: 98
-Pendiente (slope): 0.212
+last close value percentile: 92
+Pendiente (slope): 0.214
 
 #### NVDA: 
-last close value percentile: 94
-Pendiente (slope): 0.299
+last close value percentile: 92
+Pendiente (slope): 0.289
 
 #### 005930.KS: 
-last close value percentile: 97
-Pendiente (slope): 0.278
+last close value percentile: 92
+Pendiente (slope): 0.272
 
 #### NFLX: 
-last close value percentile: 97
-Pendiente (slope): 0.280
+last close value percentile: 80
+Pendiente (slope): 0.271
 
 #### MSFT: 
-last close value percentile: 96
-Pendiente (slope): 0.292
+last close value percentile: 78
+Pendiente (slope): 0.282
 
 #### LPL: 
-last close value percentile: 0
-Pendiente (slope): -0.252
+last close value percentile: 5
+Pendiente (slope): -0.249
 
 #### HLF: 
-last close value percentile: 2
+last close value percentile: 6
 Pendiente (slope): -0.228
 
 #### AAPL: 
-last close value percentile: 50
-Pendiente (slope): 0.179
+last close value percentile: 33
+Pendiente (slope): 0.151
 
 #### 0P0000XV9S.BO: 
-last close value percentile: 81
-Pendiente (slope): 0.010
+last close value percentile: 19
+Pendiente (slope): 0.013
 
 #### BTC-EUR: 
-last close value percentile: 94
-Pendiente (slope): 0.188
+last close value percentile: 87
+Pendiente (slope): 0.184
 
 #### ADA-EUR: 
-last close value percentile: 75
-Pendiente (slope): 0.096
+last close value percentile: 69
+Pendiente (slope): 0.101
 
 #### ETH-EUR: 
-last close value percentile: 90
-Pendiente (slope): 0.165
+last close value percentile: 85
+Pendiente (slope): 0.163
 
 #### EUR=X: 
-last close value percentile: 85
-Pendiente (slope): -0.025
+last close value percentile: 82
+Pendiente (slope): -0.005
 
 #### GC=F: 
-last close value percentile: 100
-Pendiente (slope): 0.209
+last close value percentile: 94
+Pendiente (slope): 0.212
 
 #### CL=F: 
-last close value percentile: 89
-Pendiente (slope): 0.063
+last close value percentile: 76
+Pendiente (slope): 0.078

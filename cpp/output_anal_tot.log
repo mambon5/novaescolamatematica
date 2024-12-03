@@ -1,0 +1,13 @@
+mostrant intervals de classificació del pendent de les accions: 
+0 - 0.05 - 0.1 - 0.15 - 0.2 - 0.25 - 0.3 - 0.35 - 
+escriu el nombre de tickers que vols llegir:
+La primera línea del archivo es: 0LS.DU
+initial date: 2023-01-01
+Fecha actual: 2024-05-02
+ticker length: 2000
+elem length: 2000
+
+#### 0LS.F: 
+analizing tickers... 0.05%
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/0LS.F?period1=1672531200&period2=1714608000&interval=1d&events=history

@@ -1,0 +1,273 @@
+initial date: 2023-01-01
+Fecha actual: 2024-05-01
+Quantitat de dies entre les dues dates: 486
+
+#### ^IXIC: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/^IXIC?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 85
+Pendiente (slope): 0.280
+
+#### ^GSPC: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/^GSPC?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 87
+Pendiente (slope): 0.277
+
+#### ^DJI: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/^DJI?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 80
+Pendiente (slope): 0.242
+
+#### META: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/META?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 82
+Pendiente (slope): 0.294
+
+#### TSLA: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/TSLA?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 29
+Pendiente (slope): 0.027
+
+#### HPE: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/HPE?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 71
+Pendiente (slope): 0.104
+
+#### PSX: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/PSX?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 82
+Pendiente (slope): 0.262
+
+#### SU.PA: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/SU.PA?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 339
+last close value percentile: 97
+Pendiente (slope): 0.236
+
+#### RIOT: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/RIOT?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 32
+Pendiente (slope): 0.139
+
+#### GOOGL: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/GOOGL?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 99
+Pendiente (slope): 0.285
+
+#### GME: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/GME?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 4
+Pendiente (slope): -0.228
+
+#### INTC: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/INTC?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 25
+Pendiente (slope): 0.256
+
+#### IBM: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/IBM?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 78
+Pendiente (slope): 0.258
+
+#### QCOM: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/QCOM?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 91
+Pendiente (slope): 0.166
+
+#### ASML: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/ASML?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 82
+Pendiente (slope): 0.186
+
+#### TSM: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/TSM?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 92
+Pendiente (slope): 0.214
+
+#### NVDA: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/NVDA?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 92
+Pendiente (slope): 0.289
+
+#### 005930.KS: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/005930.KS?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 327
+last close value percentile: 92
+Pendiente (slope): 0.272
+
+#### NFLX: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/NFLX?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 80
+Pendiente (slope): 0.271
+
+#### MSFT: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/MSFT?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 78
+Pendiente (slope): 0.282
+
+#### LPL: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/LPL?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 5
+Pendiente (slope): -0.249
+
+#### HLF: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/HLF?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 6
+Pendiente (slope): -0.228
+
+#### AAPL: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/AAPL?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 333
+last close value percentile: 33
+Pendiente (slope): 0.151
+
+#### 0P0000XV9S.BO: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/0P0000XV9S.BO?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 324
+last close value percentile: 19
+Pendiente (slope): 0.013
+
+#### BTC-EUR: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/BTC-EUR?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 487
+last close value percentile: 87
+Pendiente (slope): 0.184
+
+#### ADA-EUR: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/ADA-EUR?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 487
+last close value percentile: 69
+Pendiente (slope): 0.101
+
+#### ETH-EUR: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/ETH-EUR?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 487
+last close value percentile: 85
+Pendiente (slope): 0.163
+
+#### EUR=X: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/EUR=X?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 348
+last close value percentile: 82
+Pendiente (slope): -0.005
+
+#### GC=F: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/GC=F?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 334
+last close value percentile: 94
+Pendiente (slope): 0.212
+
+#### CL=F: 
+quote created from tick
+https://query1.finance.yahoo.com/v7/finance/download/CL=F?period1=1672531200&period2=1714521600&interval=1d&events=history
+historial spots success
+historial spots success
+Quantitat de valors: 334
+last close value percentile: 76
+Pendiente (slope): 0.078

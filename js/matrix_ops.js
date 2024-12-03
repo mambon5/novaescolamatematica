@@ -7,7 +7,7 @@
 function transl_bunch (mat1, cols, dic, dicword, descr) {
     //translate all columns in "cols" in matrix "mat1" to its right values/"descr"
     // using dictionary "dic". Where dictionary dic contains the entries to match 
-    // at "dicword" and the description to translate to is "descr".
+    // at "dicword" and the description to translate to its "descr".
     word_len = 1;
     if(typeof(cols) != "string") word_len = cols.length;
     else cols = [cols]; // make it into an array
@@ -15,6 +15,8 @@ function transl_bunch (mat1, cols, dic, dicword, descr) {
     res = JSON.parse(JSON.stringify(mat1));
     for(var i=0;i<word_len; i++) {
         dic2 = chg_col_name(dic, dicword, cols[i]);
+        console.log("i: " + i + ", cols[i]: " + cols[i])
+        console.log("dicword: " + dicword)
         res = transl_column(res, dic2, cols[i], descr)
     }
     return res;

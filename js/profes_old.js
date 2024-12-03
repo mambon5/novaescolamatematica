@@ -45,13 +45,13 @@ function list_profes(profs) {
 
 function escriu_profes(){               
    
-     var options = '<option value=""> tria un profe</option>';
+     var options = '';
       options = options +  list_profes(profes);
      nomprofe.innerHTML = options;     
 }
 
 function escriu_alumnes(){               
-     var options = '<option value=""> tria un alumne</option>';
+     var options = '';
       options = options +  list_profes(alumnes);
      nomalumne.innerHTML = options;     
 }

@@ -2099,7 +2099,7 @@ a {
 
 .small_button {
     font-size: 14px;
-    with: 100%;
+    width: 100%;
     text-align: left;
       display: inline-block;
 	padding: 4px 8x;

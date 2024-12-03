@@ -52,12 +52,10 @@ and open the template in the editor.
     <script>
     function emptyform() {
     document.getElementById("regForm").reset(); 
-    console.log(" HOla " );
-    console.log(" HOla " + currentTab);
     showTab(0); // Display the current tab$
     }
     
-    
+
     </script>
     
     <script>
@@ -93,12 +91,11 @@ and open the template in the editor.
     <div class="tab">
   <p>  <label for="cars">Profe:</label> 
            <select name="nomprofes" id="nomprofes" onclick="deleteinvalid(this)">
-               <option value="">tria profe</option>
 
   </select></p>
   <p>  <label for="cars">Alumne:</label> 
            <select name="nomalumnes" id="nomalumnes" onclick="deleteinvalid(this)">
-               <option value="">tria alumne</option>
+               
 
   </select></p>
    
