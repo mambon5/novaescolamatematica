@@ -7,7 +7,7 @@ CREATE TABLE registre_clases (
     nom_profe varchar(255),
     nom_alumne varchar(255),
     comentari varchar(255) default "",
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     pagada_by_client bit DEFAULT 0,
     pagada_to_profe bit DEFAULT 0,
     PRIMARY KEY (id_clase)
@@ -19,7 +19,7 @@ CREATE TABLE aprofe_conexions (
     alumne varchar(255),
     materia varchar(255) DEFAULT "",
     comentari varchar(255) DEFAULT "",
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     data_inici date NOT NULL,
     data_fi date default "0001-01-01",
     PRIMARY KEY (id_conexio)
@@ -31,7 +31,7 @@ CREATE TABLE apagador_conexions (
     alumne varchar(255),
     parentesc varchar(255) DEFAULT "",
     comentari varchar(255) DEFAULT "",
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_conexio)
 ); 
 
@@ -46,7 +46,7 @@ CREATE TABLE pagaments_clases (
     comentari varchar(255),
     viatges int,
     cafes int, 
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     pag_rebut bit DEFAULT 0,
     PRIMARY KEY (id_pago)
 ); 
@@ -59,7 +59,7 @@ CREATE TABLE profes (
     email varchar(255),
     adreça varchar(255),
     data_inici date NOT NULL,
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_profes)
 );
 
@@ -71,7 +71,7 @@ CREATE TABLE alumnes (
     email varchar(255),
     adreça varchar(255),
     data_inici date NOT NULL,
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     paga_hora int DEFAULT 0,
     profe_hora int DEFAULT 0,
     PRIMARY KEY (id_alumne)
@@ -84,7 +84,7 @@ CREATE TABLE pagadors (
     telefon varchar(15),
     email varchar(255),
     data_inici date NOT NULL,
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_pagador)
 );
 
@@ -95,7 +95,7 @@ CREATE TABLE pagadors (
     telefon varchar(15),
     email varchar(255),
     data_inici date NOT NULL,
-    data_registre timestamp,
+    data_registre timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_pagador)
 );
 
@@ -105,7 +105,7 @@ CREATE TABLE disponibilitat (
     horari varchar(3000),
     data_inici date NOT NULL,
     data_caducitat date NOT NULL,
-    data_creacio timestamp,
+    data_creacio timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_dispo)
 );
 
@@ -114,7 +114,7 @@ CREATE TABLE conceptes (
     acronim varchar(255),
     concepte varchar(255),
     descripció varchar(255),
-    data_creacio timestamp,
+    data_creacio timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_concepte)
 );
 
@@ -124,7 +124,7 @@ CREATE TABLE dependencies_conceptes (
     conc_global varchar(255),
     conc_especific varchar(255),
     descripció varchar(255),
-    data_creacio timestamp,
+    data_creacio timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_dep_concepte)
 );
 
@@ -133,7 +133,7 @@ i això te conjunts de conceptes, en aquesta taula només es llisten les matèri
     id_materia int NOT NULL AUTO_INCREMENT,
     materia varchar(255),
     descripció varchar(255),
-    data_creacio timestamp,
+    data_creacio timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_materia)
 );
 
@@ -141,7 +141,7 @@ CREATE TABLE nivells ( /* 1r eso, 2n eso, 2n batx */
     id_nivell int NOT NULL AUTO_INCREMENT,
     nivell varchar(255),
     descripció varchar(255),
-    data_creacio timestamp,
+    data_creacio timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_nivell)
 );
 
@@ -151,7 +151,7 @@ una metèria en concret */
     materia varchar(255),
     concepte varchar(255),
     descripció varchar(255),
-    data_creacio timestamp,
+    data_creacio timestamp DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_contingut)
 );
 
